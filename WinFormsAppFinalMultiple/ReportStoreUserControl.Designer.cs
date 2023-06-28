@@ -47,6 +47,7 @@
             panel8 = new Panel();
             panel9 = new Panel();
             panel10 = new Panel();
+            panel11 = new Panel();
             dataGridViewStoreReport = new DataGridView();
             dgvEditStoreReportColumnSeleccion = new DataGridViewCheckBoxColumn();
             dgvEditStoreReportColumnId = new DataGridViewTextBoxColumn();
@@ -65,6 +66,25 @@
             dataGridViewTextBoxColumn10 = new DataGridViewTextBoxColumn();
             dataGridViewTextBoxColumn11 = new DataGridViewTextBoxColumn();
             dgvEditStoreReportColumnEstatusProcesado = new DataGridViewComboBoxColumn();
+            tableLayoutPanel3 = new TableLayoutPanel();
+            labelStoreRestaEfectivo = new Label();
+            labelStoreGastos = new Label();
+            labelStoreDolares = new Label();
+            labelStoreZelle = new Label();
+            labelStoreEuros = new Label();
+            labelStoreEquivalente = new Label();
+            labelStoreCambioBs = new Label();
+            labelStoreTotalFacturado = new Label();
+            label13 = new Label();
+            label14 = new Label();
+            label15 = new Label();
+            label16 = new Label();
+            label17 = new Label();
+            label18 = new Label();
+            label19 = new Label();
+            label20 = new Label();
+            label21 = new Label();
+            label22 = new Label();
             panel7 = new Panel();
             buttonExportToExcel = new Button();
             panel5 = new Panel();
@@ -96,26 +116,8 @@
             buttonStoreReportConsult = new Button();
             dateTimePickerInit = new DateTimePicker();
             label1 = new Label();
-            tableLayoutPanel3 = new TableLayoutPanel();
-            labelStoreRestaEfectivo = new Label();
-            labelStoreGastos = new Label();
-            labelStoreDolares = new Label();
-            labelStoreZelle = new Label();
-            labelStoreEuros = new Label();
-            labelStoreEquivalente = new Label();
-            labelStoreCambioBs = new Label();
-            labelStoreTotalFacturado = new Label();
-            label13 = new Label();
-            label14 = new Label();
-            label15 = new Label();
-            label16 = new Label();
-            label17 = new Label();
-            label18 = new Label();
-            label19 = new Label();
-            label20 = new Label();
-            label21 = new Label();
-            label22 = new Label();
-            panel11 = new Panel();
+            label23 = new Label();
+            comboBoxSupervisor = new ComboBox();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             panel3.SuspendLayout();
@@ -123,12 +125,12 @@
             panel8.SuspendLayout();
             panel9.SuspendLayout();
             panel10.SuspendLayout();
+            panel11.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridViewStoreReport).BeginInit();
+            tableLayoutPanel3.SuspendLayout();
             panel7.SuspendLayout();
             panel5.SuspendLayout();
             panel6.SuspendLayout();
-            tableLayoutPanel3.SuspendLayout();
-            panel11.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
@@ -199,6 +201,15 @@
             panel10.Name = "panel10";
             panel10.Size = new Size(1201, 230);
             panel10.TabIndex = 0;
+            // 
+            // panel11
+            // 
+            panel11.Controls.Add(dataGridViewStoreReport);
+            panel11.Dock = DockStyle.Fill;
+            panel11.Location = new Point(0, 0);
+            panel11.Name = "panel11";
+            panel11.Size = new Size(1201, 174);
+            panel11.TabIndex = 4;
             // 
             // dataGridViewStoreReport
             // 
@@ -406,353 +417,6 @@
             dgvEditStoreReportColumnEstatusProcesado.Name = "dgvEditStoreReportColumnEstatusProcesado";
             dgvEditStoreReportColumnEstatusProcesado.ReadOnly = true;
             dgvEditStoreReportColumnEstatusProcesado.Width = 160;
-            // 
-            // panel7
-            // 
-            panel7.Controls.Add(buttonExportToExcel);
-            panel7.Dock = DockStyle.Bottom;
-            panel7.Location = new Point(0, 230);
-            panel7.Name = "panel7";
-            panel7.Size = new Size(1201, 39);
-            panel7.TabIndex = 0;
-            // 
-            // buttonExportToExcel
-            // 
-            buttonExportToExcel.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            buttonExportToExcel.FlatAppearance.BorderColor = Color.Green;
-            buttonExportToExcel.FlatStyle = FlatStyle.Flat;
-            buttonExportToExcel.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            buttonExportToExcel.ForeColor = Color.Green;
-            buttonExportToExcel.Image = Properties.Resources.excel;
-            buttonExportToExcel.ImageAlign = ContentAlignment.MiddleRight;
-            buttonExportToExcel.Location = new Point(1054, 3);
-            buttonExportToExcel.Name = "buttonExportToExcel";
-            buttonExportToExcel.Size = new Size(144, 30);
-            buttonExportToExcel.TabIndex = 32;
-            buttonExportToExcel.Text = "Exportar Excel";
-            buttonExportToExcel.TextAlign = ContentAlignment.MiddleLeft;
-            buttonExportToExcel.UseVisualStyleBackColor = true;
-            buttonExportToExcel.Click += buttonExportToExcel_Click;
-            // 
-            // panel5
-            // 
-            panel5.Controls.Add(panel6);
-            panel5.Dock = DockStyle.Top;
-            panel5.Location = new Point(0, 0);
-            panel5.Name = "panel5";
-            panel5.Size = new Size(1201, 262);
-            panel5.TabIndex = 0;
-            // 
-            // panel6
-            // 
-            panel6.BorderStyle = BorderStyle.FixedSingle;
-            panel6.Controls.Add(textBoxResta);
-            panel6.Controls.Add(label12);
-            panel6.Controls.Add(textBoxDolar);
-            panel6.Controls.Add(label9);
-            panel6.Controls.Add(textBoxZelle);
-            panel6.Controls.Add(label10);
-            panel6.Controls.Add(textBoxEuros);
-            panel6.Controls.Add(label11);
-            panel6.Controls.Add(textBoxEquivalente);
-            panel6.Controls.Add(label7);
-            panel6.Controls.Add(textBoxCambio);
-            panel6.Controls.Add(label6);
-            panel6.Controls.Add(textBoxTotalFacturado);
-            panel6.Controls.Add(label5);
-            panel6.Controls.Add(checkBoxSelectUnselect);
-            panel6.Controls.Add(label4);
-            panel6.Controls.Add(listBoxStoreCodes);
-            panel6.Controls.Add(comboBoxStatus);
-            panel6.Controls.Add(buttonStoreReportClean);
-            panel6.Controls.Add(label8);
-            panel6.Controls.Add(textBoxGastos);
-            panel6.Controls.Add(label3);
-            panel6.Controls.Add(dateTimePickerFinal);
-            panel6.Controls.Add(label2);
-            panel6.Controls.Add(buttonStoreReportConsult);
-            panel6.Controls.Add(dateTimePickerInit);
-            panel6.Controls.Add(label1);
-            panel6.Dock = DockStyle.Top;
-            panel6.Location = new Point(0, 0);
-            panel6.Name = "panel6";
-            panel6.Size = new Size(1201, 262);
-            panel6.TabIndex = 1;
-            // 
-            // textBoxResta
-            // 
-            textBoxResta.Location = new Point(677, 135);
-            textBoxResta.Name = "textBoxResta";
-            textBoxResta.Size = new Size(147, 23);
-            textBoxResta.TabIndex = 51;
-            textBoxResta.Text = "0";
-            textBoxResta.KeyPress += decimal_KeyPress;
-            // 
-            // label12
-            // 
-            label12.AutoSize = true;
-            label12.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label12.Location = new Point(602, 135);
-            label12.Name = "label12";
-            label12.Size = new Size(74, 17);
-            label12.TabIndex = 50;
-            label12.Text = "Resta $ >=";
-            // 
-            // textBoxDolar
-            // 
-            textBoxDolar.Location = new Point(677, 74);
-            textBoxDolar.Name = "textBoxDolar";
-            textBoxDolar.Size = new Size(147, 23);
-            textBoxDolar.TabIndex = 49;
-            textBoxDolar.Text = "0";
-            textBoxDolar.KeyPress += decimal_KeyPress;
-            // 
-            // label9
-            // 
-            label9.AutoSize = true;
-            label9.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label9.Location = new Point(602, 74);
-            label9.Name = "label9";
-            label9.Size = new Size(75, 17);
-            label9.TabIndex = 48;
-            label9.Text = "Dolar $ >=";
-            // 
-            // textBoxZelle
-            // 
-            textBoxZelle.Location = new Point(677, 41);
-            textBoxZelle.Name = "textBoxZelle";
-            textBoxZelle.Size = new Size(147, 23);
-            textBoxZelle.TabIndex = 47;
-            textBoxZelle.Text = "0";
-            textBoxZelle.KeyPress += decimal_KeyPress;
-            // 
-            // label10
-            // 
-            label10.AutoSize = true;
-            label10.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label10.Location = new Point(602, 42);
-            label10.Name = "label10";
-            label10.Size = new Size(60, 17);
-            label10.TabIndex = 46;
-            label10.Text = "Zelle >=";
-            // 
-            // textBoxEuros
-            // 
-            textBoxEuros.Location = new Point(677, 12);
-            textBoxEuros.Name = "textBoxEuros";
-            textBoxEuros.Size = new Size(147, 23);
-            textBoxEuros.TabIndex = 45;
-            textBoxEuros.Text = "0";
-            textBoxEuros.KeyPress += decimal_KeyPress;
-            // 
-            // label11
-            // 
-            label11.AutoSize = true;
-            label11.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label11.Location = new Point(602, 13);
-            label11.Name = "label11";
-            label11.Size = new Size(64, 17);
-            label11.TabIndex = 44;
-            label11.Text = "Euros >=";
-            // 
-            // textBoxEquivalente
-            // 
-            textBoxEquivalente.Location = new Point(419, 147);
-            textBoxEquivalente.Name = "textBoxEquivalente";
-            textBoxEquivalente.Size = new Size(147, 23);
-            textBoxEquivalente.TabIndex = 43;
-            textBoxEquivalente.Text = "0";
-            textBoxEquivalente.KeyPress += decimal_KeyPress;
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label7.Location = new Point(235, 147);
-            label7.Name = "label7";
-            label7.Size = new Size(178, 17);
-            label7.TabIndex = 42;
-            label7.Text = "Equivalente $ Facturado >=";
-            // 
-            // textBoxCambio
-            // 
-            textBoxCambio.Location = new Point(419, 114);
-            textBoxCambio.Name = "textBoxCambio";
-            textBoxCambio.Size = new Size(147, 23);
-            textBoxCambio.TabIndex = 41;
-            textBoxCambio.Text = "0";
-            textBoxCambio.KeyPress += decimal_KeyPress;
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label6.Location = new Point(235, 115);
-            label6.Name = "label6";
-            label6.Size = new Size(160, 17);
-            label6.TabIndex = 40;
-            label6.Text = "Cambio Bs Facturado >=";
-            // 
-            // textBoxTotalFacturado
-            // 
-            textBoxTotalFacturado.Location = new Point(419, 85);
-            textBoxTotalFacturado.Name = "textBoxTotalFacturado";
-            textBoxTotalFacturado.Size = new Size(147, 23);
-            textBoxTotalFacturado.TabIndex = 39;
-            textBoxTotalFacturado.Text = "0";
-            textBoxTotalFacturado.KeyPress += decimal_KeyPress;
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label5.Location = new Point(235, 86);
-            label5.Name = "label5";
-            label5.Size = new Size(144, 17);
-            label5.TabIndex = 38;
-            label5.Text = "Total Facturado Bs >=";
-            // 
-            // checkBoxSelectUnselect
-            // 
-            checkBoxSelectUnselect.AutoSize = true;
-            checkBoxSelectUnselect.Location = new Point(4, 186);
-            checkBoxSelectUnselect.Name = "checkBoxSelectUnselect";
-            checkBoxSelectUnselect.Size = new Size(164, 19);
-            checkBoxSelectUnselect.TabIndex = 37;
-            checkBoxSelectUnselect.Text = "Seleccionar/Deseleccionar";
-            checkBoxSelectUnselect.UseVisualStyleBackColor = true;
-            checkBoxSelectUnselect.CheckedChanged += checkBoxSelectUnselect_CheckedChanged;
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label4.Location = new Point(4, 14);
-            label4.Name = "label4";
-            label4.Size = new Size(60, 17);
-            label4.TabIndex = 36;
-            label4.Text = "Tiendas:";
-            // 
-            // listBoxStoreCodes
-            // 
-            listBoxStoreCodes.FormattingEnabled = true;
-            listBoxStoreCodes.ItemHeight = 15;
-            listBoxStoreCodes.Location = new Point(4, 41);
-            listBoxStoreCodes.Name = "listBoxStoreCodes";
-            listBoxStoreCodes.SelectionMode = SelectionMode.MultiSimple;
-            listBoxStoreCodes.Size = new Size(206, 139);
-            listBoxStoreCodes.TabIndex = 35;
-            // 
-            // comboBoxStatus
-            // 
-            comboBoxStatus.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBoxStatus.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            comboBoxStatus.FormattingEnabled = true;
-            comboBoxStatus.Location = new Point(677, 164);
-            comboBoxStatus.Name = "comboBoxStatus";
-            comboBoxStatus.Size = new Size(211, 25);
-            comboBoxStatus.TabIndex = 34;
-            // 
-            // buttonStoreReportClean
-            // 
-            buttonStoreReportClean.FlatAppearance.BorderColor = Color.Green;
-            buttonStoreReportClean.FlatStyle = FlatStyle.Flat;
-            buttonStoreReportClean.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            buttonStoreReportClean.ForeColor = Color.Blue;
-            buttonStoreReportClean.Image = Properties.Resources.clean;
-            buttonStoreReportClean.ImageAlign = ContentAlignment.MiddleRight;
-            buttonStoreReportClean.Location = new Point(110, 218);
-            buttonStoreReportClean.Name = "buttonStoreReportClean";
-            buttonStoreReportClean.Size = new Size(100, 30);
-            buttonStoreReportClean.TabIndex = 27;
-            buttonStoreReportClean.Text = "Limpiar";
-            buttonStoreReportClean.TextAlign = ContentAlignment.MiddleLeft;
-            buttonStoreReportClean.UseVisualStyleBackColor = true;
-            buttonStoreReportClean.Click += buttonStoreReportClean_Click;
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label8.Location = new Point(602, 166);
-            label8.Name = "label8";
-            label8.Size = new Size(56, 17);
-            label8.TabIndex = 33;
-            label8.Text = "Estatus:";
-            // 
-            // textBoxGastos
-            // 
-            textBoxGastos.Location = new Point(677, 105);
-            textBoxGastos.Name = "textBoxGastos";
-            textBoxGastos.Size = new Size(147, 23);
-            textBoxGastos.TabIndex = 31;
-            textBoxGastos.Text = "0";
-            textBoxGastos.KeyPress += decimal_KeyPress;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.Location = new Point(602, 106);
-            label3.Name = "label3";
-            label3.Size = new Size(71, 17);
-            label3.TabIndex = 29;
-            label3.Text = "Gastos >=";
-            // 
-            // dateTimePickerFinal
-            // 
-            dateTimePickerFinal.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            dateTimePickerFinal.Format = DateTimePickerFormat.Short;
-            dateTimePickerFinal.Location = new Point(365, 46);
-            dateTimePickerFinal.Name = "dateTimePickerFinal";
-            dateTimePickerFinal.Size = new Size(201, 25);
-            dateTimePickerFinal.TabIndex = 28;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.Location = new Point(235, 52);
-            label2.Name = "label2";
-            label2.Size = new Size(70, 17);
-            label2.TabIndex = 27;
-            label2.Text = "Fecha Fin:";
-            // 
-            // buttonStoreReportConsult
-            // 
-            buttonStoreReportConsult.FlatAppearance.BorderColor = Color.Green;
-            buttonStoreReportConsult.FlatStyle = FlatStyle.Flat;
-            buttonStoreReportConsult.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            buttonStoreReportConsult.ForeColor = Color.Blue;
-            buttonStoreReportConsult.Image = Properties.Resources.search;
-            buttonStoreReportConsult.ImageAlign = ContentAlignment.MiddleRight;
-            buttonStoreReportConsult.Location = new Point(4, 218);
-            buttonStoreReportConsult.Name = "buttonStoreReportConsult";
-            buttonStoreReportConsult.Size = new Size(100, 30);
-            buttonStoreReportConsult.TabIndex = 26;
-            buttonStoreReportConsult.Text = "Consultar";
-            buttonStoreReportConsult.TextAlign = ContentAlignment.MiddleLeft;
-            buttonStoreReportConsult.UseVisualStyleBackColor = true;
-            buttonStoreReportConsult.Click += buttonStoreReportConsult_Click;
-            // 
-            // dateTimePickerInit
-            // 
-            dateTimePickerInit.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            dateTimePickerInit.Format = DateTimePickerFormat.Short;
-            dateTimePickerInit.Location = new Point(365, 10);
-            dateTimePickerInit.Name = "dateTimePickerInit";
-            dateTimePickerInit.Size = new Size(201, 25);
-            dateTimePickerInit.TabIndex = 25;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(235, 14);
-            label1.Name = "label1";
-            label1.Size = new Size(85, 17);
-            label1.TabIndex = 24;
-            label1.Text = "Fecha Inicio:";
             // 
             // tableLayoutPanel3
             // 
@@ -1014,14 +678,374 @@
             label22.Text = "Total Mes";
             label22.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // panel11
+            // panel7
             // 
-            panel11.Controls.Add(dataGridViewStoreReport);
-            panel11.Dock = DockStyle.Fill;
-            panel11.Location = new Point(0, 0);
-            panel11.Name = "panel11";
-            panel11.Size = new Size(1201, 174);
-            panel11.TabIndex = 4;
+            panel7.Controls.Add(buttonExportToExcel);
+            panel7.Dock = DockStyle.Bottom;
+            panel7.Location = new Point(0, 230);
+            panel7.Name = "panel7";
+            panel7.Size = new Size(1201, 39);
+            panel7.TabIndex = 0;
+            // 
+            // buttonExportToExcel
+            // 
+            buttonExportToExcel.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            buttonExportToExcel.FlatAppearance.BorderColor = Color.Green;
+            buttonExportToExcel.FlatStyle = FlatStyle.Flat;
+            buttonExportToExcel.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            buttonExportToExcel.ForeColor = Color.Green;
+            buttonExportToExcel.Image = Properties.Resources.excel;
+            buttonExportToExcel.ImageAlign = ContentAlignment.MiddleRight;
+            buttonExportToExcel.Location = new Point(1054, 3);
+            buttonExportToExcel.Name = "buttonExportToExcel";
+            buttonExportToExcel.Size = new Size(144, 30);
+            buttonExportToExcel.TabIndex = 32;
+            buttonExportToExcel.Text = "Exportar Excel";
+            buttonExportToExcel.TextAlign = ContentAlignment.MiddleLeft;
+            buttonExportToExcel.UseVisualStyleBackColor = true;
+            buttonExportToExcel.Click += buttonExportToExcel_Click;
+            // 
+            // panel5
+            // 
+            panel5.Controls.Add(panel6);
+            panel5.Dock = DockStyle.Top;
+            panel5.Location = new Point(0, 0);
+            panel5.Name = "panel5";
+            panel5.Size = new Size(1201, 262);
+            panel5.TabIndex = 0;
+            // 
+            // panel6
+            // 
+            panel6.BorderStyle = BorderStyle.FixedSingle;
+            panel6.Controls.Add(comboBoxSupervisor);
+            panel6.Controls.Add(label23);
+            panel6.Controls.Add(textBoxResta);
+            panel6.Controls.Add(label12);
+            panel6.Controls.Add(textBoxDolar);
+            panel6.Controls.Add(label9);
+            panel6.Controls.Add(textBoxZelle);
+            panel6.Controls.Add(label10);
+            panel6.Controls.Add(textBoxEuros);
+            panel6.Controls.Add(label11);
+            panel6.Controls.Add(textBoxEquivalente);
+            panel6.Controls.Add(label7);
+            panel6.Controls.Add(textBoxCambio);
+            panel6.Controls.Add(label6);
+            panel6.Controls.Add(textBoxTotalFacturado);
+            panel6.Controls.Add(label5);
+            panel6.Controls.Add(checkBoxSelectUnselect);
+            panel6.Controls.Add(label4);
+            panel6.Controls.Add(listBoxStoreCodes);
+            panel6.Controls.Add(comboBoxStatus);
+            panel6.Controls.Add(buttonStoreReportClean);
+            panel6.Controls.Add(label8);
+            panel6.Controls.Add(textBoxGastos);
+            panel6.Controls.Add(label3);
+            panel6.Controls.Add(dateTimePickerFinal);
+            panel6.Controls.Add(label2);
+            panel6.Controls.Add(buttonStoreReportConsult);
+            panel6.Controls.Add(dateTimePickerInit);
+            panel6.Controls.Add(label1);
+            panel6.Dock = DockStyle.Top;
+            panel6.Location = new Point(0, 0);
+            panel6.Name = "panel6";
+            panel6.Size = new Size(1201, 262);
+            panel6.TabIndex = 1;
+            // 
+            // textBoxResta
+            // 
+            textBoxResta.Location = new Point(689, 133);
+            textBoxResta.Name = "textBoxResta";
+            textBoxResta.Size = new Size(147, 23);
+            textBoxResta.TabIndex = 51;
+            textBoxResta.Text = "0";
+            textBoxResta.KeyPress += decimal_KeyPress;
+            // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label12.Location = new Point(602, 135);
+            label12.Name = "label12";
+            label12.Size = new Size(74, 17);
+            label12.TabIndex = 50;
+            label12.Text = "Resta $ >=";
+            // 
+            // textBoxDolar
+            // 
+            textBoxDolar.Location = new Point(689, 72);
+            textBoxDolar.Name = "textBoxDolar";
+            textBoxDolar.Size = new Size(147, 23);
+            textBoxDolar.TabIndex = 49;
+            textBoxDolar.Text = "0";
+            textBoxDolar.KeyPress += decimal_KeyPress;
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label9.Location = new Point(602, 74);
+            label9.Name = "label9";
+            label9.Size = new Size(75, 17);
+            label9.TabIndex = 48;
+            label9.Text = "Dolar $ >=";
+            // 
+            // textBoxZelle
+            // 
+            textBoxZelle.Location = new Point(689, 39);
+            textBoxZelle.Name = "textBoxZelle";
+            textBoxZelle.Size = new Size(147, 23);
+            textBoxZelle.TabIndex = 47;
+            textBoxZelle.Text = "0";
+            textBoxZelle.KeyPress += decimal_KeyPress;
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label10.Location = new Point(602, 42);
+            label10.Name = "label10";
+            label10.Size = new Size(60, 17);
+            label10.TabIndex = 46;
+            label10.Text = "Zelle >=";
+            // 
+            // textBoxEuros
+            // 
+            textBoxEuros.Location = new Point(689, 10);
+            textBoxEuros.Name = "textBoxEuros";
+            textBoxEuros.Size = new Size(147, 23);
+            textBoxEuros.TabIndex = 45;
+            textBoxEuros.Text = "0";
+            textBoxEuros.KeyPress += decimal_KeyPress;
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label11.Location = new Point(602, 13);
+            label11.Name = "label11";
+            label11.Size = new Size(64, 17);
+            label11.TabIndex = 44;
+            label11.Text = "Euros >=";
+            // 
+            // textBoxEquivalente
+            // 
+            textBoxEquivalente.Location = new Point(419, 147);
+            textBoxEquivalente.Name = "textBoxEquivalente";
+            textBoxEquivalente.Size = new Size(147, 23);
+            textBoxEquivalente.TabIndex = 43;
+            textBoxEquivalente.Text = "0";
+            textBoxEquivalente.KeyPress += decimal_KeyPress;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label7.Location = new Point(235, 147);
+            label7.Name = "label7";
+            label7.Size = new Size(178, 17);
+            label7.TabIndex = 42;
+            label7.Text = "Equivalente $ Facturado >=";
+            // 
+            // textBoxCambio
+            // 
+            textBoxCambio.Location = new Point(419, 114);
+            textBoxCambio.Name = "textBoxCambio";
+            textBoxCambio.Size = new Size(147, 23);
+            textBoxCambio.TabIndex = 41;
+            textBoxCambio.Text = "0";
+            textBoxCambio.KeyPress += decimal_KeyPress;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label6.Location = new Point(235, 115);
+            label6.Name = "label6";
+            label6.Size = new Size(160, 17);
+            label6.TabIndex = 40;
+            label6.Text = "Cambio Bs Facturado >=";
+            // 
+            // textBoxTotalFacturado
+            // 
+            textBoxTotalFacturado.Location = new Point(419, 85);
+            textBoxTotalFacturado.Name = "textBoxTotalFacturado";
+            textBoxTotalFacturado.Size = new Size(147, 23);
+            textBoxTotalFacturado.TabIndex = 39;
+            textBoxTotalFacturado.Text = "0";
+            textBoxTotalFacturado.KeyPress += decimal_KeyPress;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label5.Location = new Point(235, 86);
+            label5.Name = "label5";
+            label5.Size = new Size(144, 17);
+            label5.TabIndex = 38;
+            label5.Text = "Total Facturado Bs >=";
+            // 
+            // checkBoxSelectUnselect
+            // 
+            checkBoxSelectUnselect.AutoSize = true;
+            checkBoxSelectUnselect.Location = new Point(4, 186);
+            checkBoxSelectUnselect.Name = "checkBoxSelectUnselect";
+            checkBoxSelectUnselect.Size = new Size(164, 19);
+            checkBoxSelectUnselect.TabIndex = 37;
+            checkBoxSelectUnselect.Text = "Seleccionar/Deseleccionar";
+            checkBoxSelectUnselect.UseVisualStyleBackColor = true;
+            checkBoxSelectUnselect.CheckedChanged += checkBoxSelectUnselect_CheckedChanged;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label4.Location = new Point(4, 14);
+            label4.Name = "label4";
+            label4.Size = new Size(60, 17);
+            label4.TabIndex = 36;
+            label4.Text = "Tiendas:";
+            // 
+            // listBoxStoreCodes
+            // 
+            listBoxStoreCodes.FormattingEnabled = true;
+            listBoxStoreCodes.ItemHeight = 15;
+            listBoxStoreCodes.Location = new Point(4, 41);
+            listBoxStoreCodes.Name = "listBoxStoreCodes";
+            listBoxStoreCodes.SelectionMode = SelectionMode.MultiSimple;
+            listBoxStoreCodes.Size = new Size(206, 139);
+            listBoxStoreCodes.TabIndex = 35;
+            // 
+            // comboBoxStatus
+            // 
+            comboBoxStatus.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBoxStatus.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            comboBoxStatus.FormattingEnabled = true;
+            comboBoxStatus.Location = new Point(689, 163);
+            comboBoxStatus.Name = "comboBoxStatus";
+            comboBoxStatus.Size = new Size(211, 25);
+            comboBoxStatus.TabIndex = 34;
+            // 
+            // buttonStoreReportClean
+            // 
+            buttonStoreReportClean.FlatAppearance.BorderColor = Color.Green;
+            buttonStoreReportClean.FlatStyle = FlatStyle.Flat;
+            buttonStoreReportClean.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            buttonStoreReportClean.ForeColor = Color.Blue;
+            buttonStoreReportClean.Image = Properties.Resources.clean;
+            buttonStoreReportClean.ImageAlign = ContentAlignment.MiddleRight;
+            buttonStoreReportClean.Location = new Point(110, 218);
+            buttonStoreReportClean.Name = "buttonStoreReportClean";
+            buttonStoreReportClean.Size = new Size(100, 30);
+            buttonStoreReportClean.TabIndex = 27;
+            buttonStoreReportClean.Text = "Limpiar";
+            buttonStoreReportClean.TextAlign = ContentAlignment.MiddleLeft;
+            buttonStoreReportClean.UseVisualStyleBackColor = true;
+            buttonStoreReportClean.Click += buttonStoreReportClean_Click;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label8.Location = new Point(602, 166);
+            label8.Name = "label8";
+            label8.Size = new Size(56, 17);
+            label8.TabIndex = 33;
+            label8.Text = "Estatus:";
+            // 
+            // textBoxGastos
+            // 
+            textBoxGastos.Location = new Point(689, 103);
+            textBoxGastos.Name = "textBoxGastos";
+            textBoxGastos.Size = new Size(147, 23);
+            textBoxGastos.TabIndex = 31;
+            textBoxGastos.Text = "0";
+            textBoxGastos.KeyPress += decimal_KeyPress;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label3.Location = new Point(602, 106);
+            label3.Name = "label3";
+            label3.Size = new Size(71, 17);
+            label3.TabIndex = 29;
+            label3.Text = "Gastos >=";
+            // 
+            // dateTimePickerFinal
+            // 
+            dateTimePickerFinal.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            dateTimePickerFinal.Format = DateTimePickerFormat.Short;
+            dateTimePickerFinal.Location = new Point(365, 46);
+            dateTimePickerFinal.Name = "dateTimePickerFinal";
+            dateTimePickerFinal.Size = new Size(201, 25);
+            dateTimePickerFinal.TabIndex = 28;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.Location = new Point(235, 52);
+            label2.Name = "label2";
+            label2.Size = new Size(70, 17);
+            label2.TabIndex = 27;
+            label2.Text = "Fecha Fin:";
+            // 
+            // buttonStoreReportConsult
+            // 
+            buttonStoreReportConsult.FlatAppearance.BorderColor = Color.Green;
+            buttonStoreReportConsult.FlatStyle = FlatStyle.Flat;
+            buttonStoreReportConsult.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            buttonStoreReportConsult.ForeColor = Color.Blue;
+            buttonStoreReportConsult.Image = Properties.Resources.search;
+            buttonStoreReportConsult.ImageAlign = ContentAlignment.MiddleRight;
+            buttonStoreReportConsult.Location = new Point(4, 218);
+            buttonStoreReportConsult.Name = "buttonStoreReportConsult";
+            buttonStoreReportConsult.Size = new Size(100, 30);
+            buttonStoreReportConsult.TabIndex = 26;
+            buttonStoreReportConsult.Text = "Consultar";
+            buttonStoreReportConsult.TextAlign = ContentAlignment.MiddleLeft;
+            buttonStoreReportConsult.UseVisualStyleBackColor = true;
+            buttonStoreReportConsult.Click += buttonStoreReportConsult_Click;
+            // 
+            // dateTimePickerInit
+            // 
+            dateTimePickerInit.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            dateTimePickerInit.Format = DateTimePickerFormat.Short;
+            dateTimePickerInit.Location = new Point(365, 10);
+            dateTimePickerInit.Name = "dateTimePickerInit";
+            dateTimePickerInit.Size = new Size(201, 25);
+            dateTimePickerInit.TabIndex = 25;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Location = new Point(235, 14);
+            label1.Name = "label1";
+            label1.Size = new Size(85, 17);
+            label1.TabIndex = 24;
+            label1.Text = "Fecha Inicio:";
+            // 
+            // label23
+            // 
+            label23.AutoSize = true;
+            label23.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label23.Location = new Point(602, 205);
+            label23.Name = "label23";
+            label23.Size = new Size(79, 17);
+            label23.TabIndex = 52;
+            label23.Text = "Supervisor:";
+            // 
+            // comboBoxSupervisor
+            // 
+            comboBoxSupervisor.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBoxSupervisor.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            comboBoxSupervisor.FormattingEnabled = true;
+            comboBoxSupervisor.Location = new Point(689, 202);
+            comboBoxSupervisor.Name = "comboBoxSupervisor";
+            comboBoxSupervisor.Size = new Size(211, 25);
+            comboBoxSupervisor.TabIndex = 53;
             // 
             // ReportStoreUserControl
             // 
@@ -1037,14 +1061,14 @@
             panel8.ResumeLayout(false);
             panel9.ResumeLayout(false);
             panel10.ResumeLayout(false);
+            panel11.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dataGridViewStoreReport).EndInit();
+            tableLayoutPanel3.ResumeLayout(false);
+            tableLayoutPanel3.PerformLayout();
             panel7.ResumeLayout(false);
             panel5.ResumeLayout(false);
             panel6.ResumeLayout(false);
             panel6.PerformLayout();
-            tableLayoutPanel3.ResumeLayout(false);
-            tableLayoutPanel3.PerformLayout();
-            panel11.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -1126,5 +1150,7 @@
         private Label label20;
         private Label label21;
         private Label label22;
+        private ComboBox comboBoxSupervisor;
+        private Label label23;
     }
 }

@@ -33,6 +33,7 @@ namespace WinFormsAppTrazoRegistrosAdmin
 
             LoadStore();
             LoadComboBoxStatus();
+            LoadComboBoxSupervisors();
 
             ApplyPermissions(_activePermissionSection);
         }
@@ -50,7 +51,7 @@ namespace WinFormsAppTrazoRegistrosAdmin
             listStatus.Add(new Status { sta_id = 0, sta_description = "TODOS" });
             var lastItem = listStatus[listStatus.Count - 1];
             listStatus[listStatus.Count - 1] = listStatus[0];
-            listStatus[0] = lastItem;   
+            listStatus[0] = lastItem;
 
             comboBoxStatus.DataSource = null;
             comboBoxStatus.DataSource = listStatus;
@@ -63,6 +64,29 @@ namespace WinFormsAppTrazoRegistrosAdmin
             else
             {
                 comboBoxStatus.SelectedIndex = -1;
+            }
+        }
+
+        private void LoadComboBoxSupervisors()
+        {
+            var listSupervisor = new List<Supervisor>(_supervisorList);
+            listSupervisor.RemoveAll(x => x.sup_id == (int)MagickInfo.SUPERVISOR.ADMINISTRADOR);
+            listSupervisor.Add(new Supervisor { sup_id = 0, sup_description = "TODOS" });
+            var lastItem = listSupervisor[listSupervisor.Count - 1];
+            listSupervisor[listSupervisor.Count - 1] = listSupervisor[0];
+            listSupervisor[0] = lastItem;
+
+            comboBoxSupervisor.DataSource = null;
+            comboBoxSupervisor.DataSource = listSupervisor;
+            comboBoxSupervisor.ValueMember = "sup_id";
+            comboBoxSupervisor.DisplayMember = "sup_description";
+            if (comboBoxSupervisor.Items.Count > 0)
+            {
+                comboBoxSupervisor.SelectedIndex = 0;
+            }
+            else
+            {
+                comboBoxSupervisor.SelectedIndex = -1;
             }
         }
 
@@ -162,7 +186,8 @@ namespace WinFormsAppTrazoRegistrosAdmin
                 p_storep_payed_dollar = Decimal.Parse(textBoxDolar.Text),
                 p_storep_expended_dollar = Decimal.Parse(textBoxGastos.Text),
                 p_storep_total_dollar = Decimal.Parse(textBoxResta.Text),
-                p_storep_sta_id = ((Status)comboBoxStatus.SelectedItem).sta_id
+                p_storep_sta_id = ((Status)comboBoxStatus.SelectedItem).sta_id,
+                p_storep_sup_id = ((Supervisor)comboBoxSupervisor.SelectedItem).sup_id
             });
 
             _RaiseRichTextInsertNewMessage(this, new(result.Item1, result.Item2));
@@ -192,6 +217,7 @@ namespace WinFormsAppTrazoRegistrosAdmin
             textBoxGastos.Enabled = false;
             textBoxResta.Enabled = false;
             comboBoxStatus.Enabled = false;
+            comboBoxSupervisor.Enabled = false;
         }
 
         private void UnBlock()
@@ -210,6 +236,7 @@ namespace WinFormsAppTrazoRegistrosAdmin
             textBoxGastos.Enabled = true;
             textBoxResta.Enabled = true;
             comboBoxStatus.Enabled = true;
+            comboBoxSupervisor.Enabled = true;
         }
 
 
