@@ -28,256 +28,266 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.buttonSupervisorRefreshData = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.buttonSupervisorAdd = new System.Windows.Forms.Button();
-            this.textBoxSupervisorAddDescription = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.groupBoxEditUser = new System.Windows.Forms.GroupBox();
-            this.buttonSupervisorDelete = new System.Windows.Forms.Button();
-            this.buttonSupervisorEdit = new System.Windows.Forms.Button();
-            this.textBoxSupervisorEditDescription = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.comboBoxSupervisorEdit = new System.Windows.Forms.ComboBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.buttonRefreshData = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.groupBox1.SuspendLayout();
-            this.groupBoxEditUser.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.SuspendLayout();
+            panel1 = new Panel();
+            groupBox2 = new GroupBox();
+            buttonSupervisorRefreshData = new Button();
+            groupBox1 = new GroupBox();
+            buttonSupervisorAdd = new Button();
+            textBoxSupervisorAddDescription = new TextBox();
+            label1 = new Label();
+            groupBoxEditUser = new GroupBox();
+            flowLayoutPanel1 = new FlowLayoutPanel();
+            buttonSupervisorEdit = new Button();
+            buttonSupervisorDelete = new Button();
+            textBoxSupervisorEditDescription = new TextBox();
+            label2 = new Label();
+            comboBoxSupervisorEdit = new ComboBox();
+            label8 = new Label();
+            buttonRefreshData = new Button();
+            panel2 = new Panel();
+            panel1.SuspendLayout();
+            groupBox2.SuspendLayout();
+            groupBox1.SuspendLayout();
+            groupBoxEditUser.SuspendLayout();
+            flowLayoutPanel1.SuspendLayout();
+            panel2.SuspendLayout();
+            SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Gainsboro;
-            this.panel1.Controls.Add(this.groupBox2);
-            this.panel1.Controls.Add(this.groupBox1);
-            this.panel1.Controls.Add(this.groupBoxEditUser);
-            this.panel1.Controls.Add(this.buttonRefreshData);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(10, 10);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(845, 452);
-            this.panel1.TabIndex = 2;
+            panel1.BackColor = Color.Gainsboro;
+            panel1.Controls.Add(groupBox2);
+            panel1.Controls.Add(groupBox1);
+            panel1.Controls.Add(groupBoxEditUser);
+            panel1.Controls.Add(buttonRefreshData);
+            panel1.Dock = DockStyle.Fill;
+            panel1.Location = new Point(10, 10);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(845, 452);
+            panel1.TabIndex = 2;
             // 
             // groupBox2
             // 
-            this.groupBox2.BackColor = System.Drawing.Color.White;
-            this.groupBox2.Controls.Add(this.buttonSupervisorRefreshData);
-            this.groupBox2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.groupBox2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.groupBox2.Location = new System.Drawing.Point(0, 320);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(845, 89);
-            this.groupBox2.TabIndex = 22;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Refrescar Data";
+            groupBox2.BackColor = Color.White;
+            groupBox2.Controls.Add(buttonSupervisorRefreshData);
+            groupBox2.Dock = DockStyle.Top;
+            groupBox2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            groupBox2.Location = new Point(0, 320);
+            groupBox2.Name = "groupBox2";
+            groupBox2.Size = new Size(845, 89);
+            groupBox2.TabIndex = 22;
+            groupBox2.TabStop = false;
+            groupBox2.Text = "Refrescar Data";
             // 
             // buttonSupervisorRefreshData
             // 
-            this.buttonSupervisorRefreshData.FlatAppearance.BorderColor = System.Drawing.Color.Green;
-            this.buttonSupervisorRefreshData.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSupervisorRefreshData.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.buttonSupervisorRefreshData.ForeColor = System.Drawing.Color.Blue;
-            this.buttonSupervisorRefreshData.Image = global::WinFormsAppTrazoRegistrosAdmin.Properties.Resources.refresh;
-            this.buttonSupervisorRefreshData.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.buttonSupervisorRefreshData.Location = new System.Drawing.Point(19, 39);
-            this.buttonSupervisorRefreshData.Name = "buttonSupervisorRefreshData";
-            this.buttonSupervisorRefreshData.Size = new System.Drawing.Size(100, 30);
-            this.buttonSupervisorRefreshData.TabIndex = 18;
-            this.buttonSupervisorRefreshData.Text = "Refrescar";
-            this.buttonSupervisorRefreshData.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonSupervisorRefreshData.UseVisualStyleBackColor = true;
-            this.buttonSupervisorRefreshData.Click += new System.EventHandler(this.buttonSupervisorRefreshData_Click);
+            buttonSupervisorRefreshData.FlatAppearance.BorderColor = Color.Green;
+            buttonSupervisorRefreshData.FlatStyle = FlatStyle.Flat;
+            buttonSupervisorRefreshData.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            buttonSupervisorRefreshData.ForeColor = Color.Blue;
+            buttonSupervisorRefreshData.Image = Properties.Resources.refresh;
+            buttonSupervisorRefreshData.ImageAlign = ContentAlignment.MiddleRight;
+            buttonSupervisorRefreshData.Location = new Point(19, 39);
+            buttonSupervisorRefreshData.Name = "buttonSupervisorRefreshData";
+            buttonSupervisorRefreshData.Size = new Size(100, 30);
+            buttonSupervisorRefreshData.TabIndex = 18;
+            buttonSupervisorRefreshData.Text = "Refrescar";
+            buttonSupervisorRefreshData.TextAlign = ContentAlignment.MiddleLeft;
+            buttonSupervisorRefreshData.UseVisualStyleBackColor = true;
+            buttonSupervisorRefreshData.Click += buttonSupervisorRefreshData_Click;
             // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.White;
-            this.groupBox1.Controls.Add(this.buttonSupervisorAdd);
-            this.groupBox1.Controls.Add(this.textBoxSupervisorAddDescription);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.groupBox1.Location = new System.Drawing.Point(0, 187);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(845, 133);
-            this.groupBox1.TabIndex = 21;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Agregar Supervisor";
+            groupBox1.BackColor = Color.White;
+            groupBox1.Controls.Add(buttonSupervisorAdd);
+            groupBox1.Controls.Add(textBoxSupervisorAddDescription);
+            groupBox1.Controls.Add(label1);
+            groupBox1.Dock = DockStyle.Top;
+            groupBox1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            groupBox1.Location = new Point(0, 187);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new Size(845, 133);
+            groupBox1.TabIndex = 21;
+            groupBox1.TabStop = false;
+            groupBox1.Text = "Agregar Supervisor";
             // 
             // buttonSupervisorAdd
             // 
-            this.buttonSupervisorAdd.FlatAppearance.BorderColor = System.Drawing.Color.Green;
-            this.buttonSupervisorAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSupervisorAdd.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.buttonSupervisorAdd.ForeColor = System.Drawing.Color.Green;
-            this.buttonSupervisorAdd.Image = global::WinFormsAppTrazoRegistrosAdmin.Properties.Resources.add;
-            this.buttonSupervisorAdd.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.buttonSupervisorAdd.Location = new System.Drawing.Point(19, 83);
-            this.buttonSupervisorAdd.Name = "buttonSupervisorAdd";
-            this.buttonSupervisorAdd.Size = new System.Drawing.Size(100, 30);
-            this.buttonSupervisorAdd.TabIndex = 19;
-            this.buttonSupervisorAdd.Text = "Agregar";
-            this.buttonSupervisorAdd.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonSupervisorAdd.UseVisualStyleBackColor = true;
-            this.buttonSupervisorAdd.Click += new System.EventHandler(this.buttonSupervisorAdd_Click);
+            buttonSupervisorAdd.FlatAppearance.BorderColor = Color.Green;
+            buttonSupervisorAdd.FlatStyle = FlatStyle.Flat;
+            buttonSupervisorAdd.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            buttonSupervisorAdd.ForeColor = Color.Green;
+            buttonSupervisorAdd.Image = Properties.Resources.add;
+            buttonSupervisorAdd.ImageAlign = ContentAlignment.MiddleRight;
+            buttonSupervisorAdd.Location = new Point(19, 83);
+            buttonSupervisorAdd.Name = "buttonSupervisorAdd";
+            buttonSupervisorAdd.Size = new Size(100, 30);
+            buttonSupervisorAdd.TabIndex = 19;
+            buttonSupervisorAdd.Text = "Agregar";
+            buttonSupervisorAdd.TextAlign = ContentAlignment.MiddleLeft;
+            buttonSupervisorAdd.UseVisualStyleBackColor = true;
+            buttonSupervisorAdd.Click += buttonSupervisorAdd_Click;
             // 
             // textBoxSupervisorAddDescription
             // 
-            this.textBoxSupervisorAddDescription.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBoxSupervisorAddDescription.Location = new System.Drawing.Point(144, 43);
-            this.textBoxSupervisorAddDescription.Name = "textBoxSupervisorAddDescription";
-            this.textBoxSupervisorAddDescription.Size = new System.Drawing.Size(228, 25);
-            this.textBoxSupervisorAddDescription.TabIndex = 3;
+            textBoxSupervisorAddDescription.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxSupervisorAddDescription.Location = new Point(144, 43);
+            textBoxSupervisorAddDescription.Name = "textBoxSupervisorAddDescription";
+            textBoxSupervisorAddDescription.Size = new Size(228, 25);
+            textBoxSupervisorAddDescription.TabIndex = 3;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(19, 46);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(123, 17);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Nuevo Supervisor:";
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Location = new Point(19, 46);
+            label1.Name = "label1";
+            label1.Size = new Size(123, 17);
+            label1.TabIndex = 2;
+            label1.Text = "Nuevo Supervisor:";
             // 
             // groupBoxEditUser
             // 
-            this.groupBoxEditUser.BackColor = System.Drawing.Color.White;
-            this.groupBoxEditUser.Controls.Add(this.buttonSupervisorDelete);
-            this.groupBoxEditUser.Controls.Add(this.buttonSupervisorEdit);
-            this.groupBoxEditUser.Controls.Add(this.textBoxSupervisorEditDescription);
-            this.groupBoxEditUser.Controls.Add(this.label2);
-            this.groupBoxEditUser.Controls.Add(this.comboBoxSupervisorEdit);
-            this.groupBoxEditUser.Controls.Add(this.label8);
-            this.groupBoxEditUser.Dock = System.Windows.Forms.DockStyle.Top;
-            this.groupBoxEditUser.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.groupBoxEditUser.Location = new System.Drawing.Point(0, 0);
-            this.groupBoxEditUser.Name = "groupBoxEditUser";
-            this.groupBoxEditUser.Size = new System.Drawing.Size(845, 187);
-            this.groupBoxEditUser.TabIndex = 19;
-            this.groupBoxEditUser.TabStop = false;
-            this.groupBoxEditUser.Text = "Editar Supervisor";
+            groupBoxEditUser.BackColor = Color.White;
+            groupBoxEditUser.Controls.Add(flowLayoutPanel1);
+            groupBoxEditUser.Controls.Add(textBoxSupervisorEditDescription);
+            groupBoxEditUser.Controls.Add(label2);
+            groupBoxEditUser.Controls.Add(comboBoxSupervisorEdit);
+            groupBoxEditUser.Controls.Add(label8);
+            groupBoxEditUser.Dock = DockStyle.Top;
+            groupBoxEditUser.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            groupBoxEditUser.Location = new Point(0, 0);
+            groupBoxEditUser.Name = "groupBoxEditUser";
+            groupBoxEditUser.Size = new Size(845, 187);
+            groupBoxEditUser.TabIndex = 19;
+            groupBoxEditUser.TabStop = false;
+            groupBoxEditUser.Text = "Editar Supervisor";
             // 
-            // buttonSupervisorDelete
+            // flowLayoutPanel1
             // 
-            this.buttonSupervisorDelete.FlatAppearance.BorderColor = System.Drawing.Color.Green;
-            this.buttonSupervisorDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSupervisorDelete.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.buttonSupervisorDelete.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.buttonSupervisorDelete.Image = global::WinFormsAppTrazoRegistrosAdmin.Properties.Resources.delete;
-            this.buttonSupervisorDelete.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.buttonSupervisorDelete.Location = new System.Drawing.Point(125, 130);
-            this.buttonSupervisorDelete.Name = "buttonSupervisorDelete";
-            this.buttonSupervisorDelete.Size = new System.Drawing.Size(100, 30);
-            this.buttonSupervisorDelete.TabIndex = 19;
-            this.buttonSupervisorDelete.Text = "Eliminar";
-            this.buttonSupervisorDelete.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonSupervisorDelete.UseVisualStyleBackColor = true;
-            this.buttonSupervisorDelete.Click += new System.EventHandler(this.buttonSupervisorDelete_Click);
+            flowLayoutPanel1.Controls.Add(buttonSupervisorEdit);
+            flowLayoutPanel1.Controls.Add(buttonSupervisorDelete);
+            flowLayoutPanel1.Location = new Point(16, 132);
+            flowLayoutPanel1.Name = "flowLayoutPanel1";
+            flowLayoutPanel1.Size = new Size(214, 37);
+            flowLayoutPanel1.TabIndex = 22;
             // 
             // buttonSupervisorEdit
             // 
-            this.buttonSupervisorEdit.FlatAppearance.BorderColor = System.Drawing.Color.Green;
-            this.buttonSupervisorEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSupervisorEdit.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.buttonSupervisorEdit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.buttonSupervisorEdit.Image = global::WinFormsAppTrazoRegistrosAdmin.Properties.Resources.edit;
-            this.buttonSupervisorEdit.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.buttonSupervisorEdit.Location = new System.Drawing.Point(19, 130);
-            this.buttonSupervisorEdit.Name = "buttonSupervisorEdit";
-            this.buttonSupervisorEdit.Size = new System.Drawing.Size(100, 30);
-            this.buttonSupervisorEdit.TabIndex = 18;
-            this.buttonSupervisorEdit.Text = "Editar";
-            this.buttonSupervisorEdit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonSupervisorEdit.UseVisualStyleBackColor = true;
-            this.buttonSupervisorEdit.Click += new System.EventHandler(this.buttonSupervisorEdit_Click);
+            buttonSupervisorEdit.FlatAppearance.BorderColor = Color.Green;
+            buttonSupervisorEdit.FlatStyle = FlatStyle.Flat;
+            buttonSupervisorEdit.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            buttonSupervisorEdit.ForeColor = Color.FromArgb(255, 128, 0);
+            buttonSupervisorEdit.Image = Properties.Resources.edit;
+            buttonSupervisorEdit.ImageAlign = ContentAlignment.MiddleRight;
+            buttonSupervisorEdit.Location = new Point(3, 3);
+            buttonSupervisorEdit.Name = "buttonSupervisorEdit";
+            buttonSupervisorEdit.Size = new Size(100, 30);
+            buttonSupervisorEdit.TabIndex = 18;
+            buttonSupervisorEdit.Text = "Editar";
+            buttonSupervisorEdit.TextAlign = ContentAlignment.MiddleLeft;
+            buttonSupervisorEdit.UseVisualStyleBackColor = true;
+            buttonSupervisorEdit.Click += buttonSupervisorEdit_Click;
+            // 
+            // buttonSupervisorDelete
+            // 
+            buttonSupervisorDelete.FlatAppearance.BorderColor = Color.Green;
+            buttonSupervisorDelete.FlatStyle = FlatStyle.Flat;
+            buttonSupervisorDelete.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            buttonSupervisorDelete.ForeColor = Color.FromArgb(192, 0, 0);
+            buttonSupervisorDelete.Image = Properties.Resources.delete;
+            buttonSupervisorDelete.ImageAlign = ContentAlignment.MiddleRight;
+            buttonSupervisorDelete.Location = new Point(109, 3);
+            buttonSupervisorDelete.Name = "buttonSupervisorDelete";
+            buttonSupervisorDelete.Size = new Size(100, 30);
+            buttonSupervisorDelete.TabIndex = 19;
+            buttonSupervisorDelete.Text = "Eliminar";
+            buttonSupervisorDelete.TextAlign = ContentAlignment.MiddleLeft;
+            buttonSupervisorDelete.UseVisualStyleBackColor = true;
+            buttonSupervisorDelete.Click += buttonSupervisorDelete_Click;
             // 
             // textBoxSupervisorEditDescription
             // 
-            this.textBoxSupervisorEditDescription.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBoxSupervisorEditDescription.Location = new System.Drawing.Point(144, 86);
-            this.textBoxSupervisorEditDescription.Name = "textBoxSupervisorEditDescription";
-            this.textBoxSupervisorEditDescription.Size = new System.Drawing.Size(228, 25);
-            this.textBoxSupervisorEditDescription.TabIndex = 3;
+            textBoxSupervisorEditDescription.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxSupervisorEditDescription.Location = new Point(144, 86);
+            textBoxSupervisorEditDescription.Name = "textBoxSupervisorEditDescription";
+            textBoxSupervisorEditDescription.Size = new Size(228, 25);
+            textBoxSupervisorEditDescription.TabIndex = 3;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(19, 89);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(119, 17);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Editar Supervisor:";
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.Location = new Point(19, 89);
+            label2.Name = "label2";
+            label2.Size = new Size(119, 17);
+            label2.TabIndex = 2;
+            label2.Text = "Editar Supervisor:";
             // 
             // comboBoxSupervisorEdit
             // 
-            this.comboBoxSupervisorEdit.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxSupervisorEdit.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.comboBoxSupervisorEdit.FormattingEnabled = true;
-            this.comboBoxSupervisorEdit.Location = new System.Drawing.Point(144, 42);
-            this.comboBoxSupervisorEdit.Name = "comboBoxSupervisorEdit";
-            this.comboBoxSupervisorEdit.Size = new System.Drawing.Size(228, 25);
-            this.comboBoxSupervisorEdit.TabIndex = 1;
-            this.comboBoxSupervisorEdit.SelectedIndexChanged += new System.EventHandler(this.comboBoxSupervisorEdit_SelectedIndexChanged);
+            comboBoxSupervisorEdit.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBoxSupervisorEdit.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            comboBoxSupervisorEdit.FormattingEnabled = true;
+            comboBoxSupervisorEdit.Location = new Point(144, 42);
+            comboBoxSupervisorEdit.Name = "comboBoxSupervisorEdit";
+            comboBoxSupervisorEdit.Size = new Size(228, 25);
+            comboBoxSupervisorEdit.TabIndex = 1;
+            comboBoxSupervisorEdit.SelectedIndexChanged += comboBoxSupervisorEdit_SelectedIndexChanged;
             // 
             // label8
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label8.Location = new System.Drawing.Point(19, 45);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(79, 17);
-            this.label8.TabIndex = 0;
-            this.label8.Text = "Supervisor:";
+            label8.AutoSize = true;
+            label8.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label8.Location = new Point(19, 45);
+            label8.Name = "label8";
+            label8.Size = new Size(79, 17);
+            label8.TabIndex = 0;
+            label8.Text = "Supervisor:";
             // 
             // buttonRefreshData
             // 
-            this.buttonRefreshData.FlatAppearance.BorderColor = System.Drawing.Color.Green;
-            this.buttonRefreshData.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonRefreshData.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.buttonRefreshData.ForeColor = System.Drawing.Color.Blue;
-            this.buttonRefreshData.Image = global::WinFormsAppTrazoRegistrosAdmin.Properties.Resources.refresh;
-            this.buttonRefreshData.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.buttonRefreshData.Location = new System.Drawing.Point(19, 139);
-            this.buttonRefreshData.Name = "buttonRefreshData";
-            this.buttonRefreshData.Size = new System.Drawing.Size(100, 30);
-            this.buttonRefreshData.TabIndex = 20;
-            this.buttonRefreshData.Text = "Refrescar";
-            this.buttonRefreshData.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonRefreshData.UseVisualStyleBackColor = true;
+            buttonRefreshData.FlatAppearance.BorderColor = Color.Green;
+            buttonRefreshData.FlatStyle = FlatStyle.Flat;
+            buttonRefreshData.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            buttonRefreshData.ForeColor = Color.Blue;
+            buttonRefreshData.Image = Properties.Resources.refresh;
+            buttonRefreshData.ImageAlign = ContentAlignment.MiddleRight;
+            buttonRefreshData.Location = new Point(19, 139);
+            buttonRefreshData.Name = "buttonRefreshData";
+            buttonRefreshData.Size = new Size(100, 30);
+            buttonRefreshData.TabIndex = 20;
+            buttonRefreshData.Text = "Refrescar";
+            buttonRefreshData.TextAlign = ContentAlignment.MiddleLeft;
+            buttonRefreshData.UseVisualStyleBackColor = true;
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.DarkBlue;
-            this.panel2.Controls.Add(this.panel1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Padding = new System.Windows.Forms.Padding(10);
-            this.panel2.Size = new System.Drawing.Size(865, 472);
-            this.panel2.TabIndex = 3;
+            panel2.BackColor = Color.DarkBlue;
+            panel2.Controls.Add(panel1);
+            panel2.Dock = DockStyle.Fill;
+            panel2.Location = new Point(0, 0);
+            panel2.Name = "panel2";
+            panel2.Padding = new Padding(10);
+            panel2.Size = new Size(865, 472);
+            panel2.TabIndex = 3;
             // 
             // SupervisorUserControl
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.panel2);
-            this.Name = "SupervisorUserControl";
-            this.Size = new System.Drawing.Size(865, 472);
-            this.panel1.ResumeLayout(false);
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.groupBoxEditUser.ResumeLayout(false);
-            this.groupBoxEditUser.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            Controls.Add(panel2);
+            Name = "SupervisorUserControl";
+            Size = new Size(865, 472);
+            panel1.ResumeLayout(false);
+            groupBox2.ResumeLayout(false);
+            groupBox1.ResumeLayout(false);
+            groupBox1.PerformLayout();
+            groupBoxEditUser.ResumeLayout(false);
+            groupBoxEditUser.PerformLayout();
+            flowLayoutPanel1.ResumeLayout(false);
+            panel2.ResumeLayout(false);
+            ResumeLayout(false);
         }
 
         #endregion
@@ -298,5 +308,6 @@
         private Label label8;
         private Button buttonRefreshData;
         private Panel panel2;
+        private FlowLayoutPanel flowLayoutPanel1;
     }
 }

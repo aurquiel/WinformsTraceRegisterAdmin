@@ -145,7 +145,7 @@ namespace WinFormsAppTrazoRegistrosAdmin
                     textBoxUserEditSurname.Text = item.usr_lastname;
                     textBoxUserEditMail.Text = item.usr_email;
 
-                    
+
                     if (item.usr_urol_id == (int)MagickInfo.ROLES.STORE_ROL)
                     {
                         radioButtonUserEditStore.Checked = true;
@@ -182,7 +182,7 @@ namespace WinFormsAppTrazoRegistrosAdmin
                             }
                         }
                     }
-                    
+
                     break;
                 }
             }
@@ -222,7 +222,7 @@ namespace WinFormsAppTrazoRegistrosAdmin
         {
             var resultGetUsers = await _webserviceOperations.UserGetAll(_activeUser.usr_id);
 
-            _RaiseRichTextInsertNewMessage?.Invoke(this, new (resultGetUsers.Item1, resultGetUsers.Item2));
+            _RaiseRichTextInsertNewMessage?.Invoke(this, new(resultGetUsers.Item1, resultGetUsers.Item2));
 
             if (resultGetUsers.Item1)
             {
@@ -240,7 +240,7 @@ namespace WinFormsAppTrazoRegistrosAdmin
         {
             if (comboBoxUserEdit.SelectedIndex == -1)
             {
-                _RaiseRichTextInsertNewMessage?.Invoke(this, new (false, "Error debe seleccionar un usuario."));
+                _RaiseRichTextInsertNewMessage?.Invoke(this, new(false, "Error debe seleccionar un usuario."));
                 return;
             }
 
@@ -248,7 +248,7 @@ namespace WinFormsAppTrazoRegistrosAdmin
                    string.IsNullOrEmpty(textBoxUserEditName.Text) || string.IsNullOrEmpty(textBoxUserEditSurname.Text) ||
                    string.IsNullOrEmpty(textBoxUserEditMail.Text))
             {
-                _RaiseRichTextInsertNewMessage?.Invoke(this, new (false, "Error campos invalidos."));
+                _RaiseRichTextInsertNewMessage?.Invoke(this, new(false, "Error campos invalidos."));
                 return;
             }
 
@@ -303,13 +303,13 @@ namespace WinFormsAppTrazoRegistrosAdmin
                     }
             );
 
-            _RaiseRichTextInsertNewMessage?.Invoke(this, new (result.Item1, result.Item2));
+            _RaiseRichTextInsertNewMessage?.Invoke(this, new(result.Item1, result.Item2));
 
             if (result.Item1)
             {
                 //Si el usuario activo se modifico
-                if(_activeUser.usr_id == ((User)comboBoxUserEdit.SelectedItem).usr_id)     
-                { 
+                if (_activeUser.usr_id == ((User)comboBoxUserEdit.SelectedItem).usr_id)
+                {
                     var resultGetUserById = await _webserviceOperations.UserGetById(_activeUser.usr_id);
 
                     _RaiseRichTextInsertNewMessage?.Invoke(this, new(resultGetUserById.Item1, resultGetUserById.Item2));
@@ -319,7 +319,7 @@ namespace WinFormsAppTrazoRegistrosAdmin
                         _activeUser.usr_id = resultGetUserById.Item3.usr_id;
                         _activeUser.usr_alias = resultGetUserById.Item3.usr_alias;
                         _activeUser.usr_firstname = resultGetUserById.Item3.usr_firstname;
-                        _activeUser.usr_lastname =   resultGetUserById.Item3.usr_lastname;
+                        _activeUser.usr_lastname = resultGetUserById.Item3.usr_lastname;
                         _activeUser.usr_email = resultGetUserById.Item3.usr_email;
                         _activeUser.usr_manage_id = resultGetUserById.Item3.usr_manage_id;
                         _activeUser.usr_urol_id = resultGetUserById.Item3.usr_urol_id;
@@ -334,7 +334,7 @@ namespace WinFormsAppTrazoRegistrosAdmin
                             _activePermit = resultGetPermissions.Item3;
                             _RaiseUpdateActiveUser?.Invoke(this, new(_activeUser, resultGetPermissions.Item3));
                         }
-                    } 
+                    }
                 }
 
                 textBoxUserEditAlias.Text = string.Empty;
@@ -370,7 +370,7 @@ namespace WinFormsAppTrazoRegistrosAdmin
         {
             if (comboBoxUserEdit.SelectedIndex == -1)
             {
-                _RaiseRichTextInsertNewMessage?.Invoke(this, new (false, "Error debe seleccionar un usuario."));
+                _RaiseRichTextInsertNewMessage?.Invoke(this, new(false, "Error debe seleccionar un usuario."));
                 return;
             }
 
@@ -381,7 +381,7 @@ namespace WinFormsAppTrazoRegistrosAdmin
 
             if (_activeUser.usr_id == ((User)comboBoxUserEdit.SelectedItem).usr_id)
             {
-                _RaiseRichTextInsertNewMessage?.Invoke(this, new (false, "Error no se puede elimnar el usuario en uso."));
+                _RaiseRichTextInsertNewMessage?.Invoke(this, new(false, "Error no se puede elimnar el usuario en uso."));
                 return;
             }
 
@@ -392,14 +392,14 @@ namespace WinFormsAppTrazoRegistrosAdmin
             var result = await _webserviceOperations.UserDelete(
                 new User
                 {
-                        usr_id = ((User)comboBoxUserEdit.SelectedItem).usr_id,
-                        usr_audit = _activeUser.usr_id,
-                        usr_audit_date = DateTime.Now,
-                        usr_deleted = true
+                    usr_id = ((User)comboBoxUserEdit.SelectedItem).usr_id,
+                    usr_audit = _activeUser.usr_id,
+                    usr_audit_date = DateTime.Now,
+                    usr_deleted = true
                 }
             );
 
-            _RaiseRichTextInsertNewMessage?.Invoke(this, new (result.Item1, result.Item2));
+            _RaiseRichTextInsertNewMessage?.Invoke(this, new(result.Item1, result.Item2));
 
             if (result.Item1)
             {
@@ -457,7 +457,7 @@ namespace WinFormsAppTrazoRegistrosAdmin
                    string.IsNullOrEmpty(textBoxUserAddName.Text) || string.IsNullOrEmpty(textBoxUserAddSurname.Text) ||
                    string.IsNullOrEmpty(textBoxUserAddMail.Text))
             {
-                _RaiseRichTextInsertNewMessage?.Invoke(this, new (false, "Error campos invalidos."));
+                _RaiseRichTextInsertNewMessage?.Invoke(this, new(false, "Error campos invalidos."));
                 return;
             }
 
@@ -508,7 +508,7 @@ namespace WinFormsAppTrazoRegistrosAdmin
                     }
             );
 
-            _RaiseRichTextInsertNewMessage?.Invoke(this, new (result.Item1, result.Item2));
+            _RaiseRichTextInsertNewMessage?.Invoke(this, new(result.Item1, result.Item2));
 
             if (result.Item1)
             {

@@ -19,7 +19,7 @@ namespace WinFormsAppTrazoRegistrosAdmin
 
         public StatusUserControl(WebServiceOperation webserviceOperations,
             User activeUser, List<Status> statusList,
-            UserPermit _activePermissionSection, 
+            UserPermit _activePermissionSection,
             EventHandler<(bool, string)> RaiseRichTextInsertNewMessage,
             EventHandler<List<Status>> RaiseUpdateStatus)
         {
@@ -92,7 +92,7 @@ namespace WinFormsAppTrazoRegistrosAdmin
         {
             if (string.IsNullOrEmpty(textBoxStatusEditDescription.Text))
             {
-                _RaiseRichTextInsertNewMessage?.Invoke(this, new (false, "Error campos invalidos."));
+                _RaiseRichTextInsertNewMessage?.Invoke(this, new(false, "Error campos invalidos."));
                 return;
             }
 
@@ -112,7 +112,7 @@ namespace WinFormsAppTrazoRegistrosAdmin
                 }
             );
 
-            _RaiseRichTextInsertNewMessage?.Invoke(this, new (true, result.Item2));
+            _RaiseRichTextInsertNewMessage?.Invoke(this, new(true, result.Item2));
 
             if (result.Item1)
             {
@@ -132,7 +132,7 @@ namespace WinFormsAppTrazoRegistrosAdmin
         {
             var resultGeStatus = await _webserviceOperations.StatusGetAll();
 
-            _RaiseRichTextInsertNewMessage?.Invoke(this, new (resultGeStatus.Item1, resultGeStatus.Item2));
+            _RaiseRichTextInsertNewMessage?.Invoke(this, new(resultGeStatus.Item1, resultGeStatus.Item2));
 
             if (resultGeStatus.Item1)
             {
@@ -141,7 +141,7 @@ namespace WinFormsAppTrazoRegistrosAdmin
                 _RaiseUpdateStatus?.Invoke(this, _statusList);
                 return true;
             }
-           
+
             return false;
         }
 
@@ -149,7 +149,7 @@ namespace WinFormsAppTrazoRegistrosAdmin
         {
             if (comboBoxStatusEdit.SelectedIndex == -1)
             {
-                _RaiseRichTextInsertNewMessage?.Invoke(this, new (false, "Error debe seleccionar un estatus."));
+                _RaiseRichTextInsertNewMessage?.Invoke(this, new(false, "Error debe seleccionar un estatus."));
                 return;
             }
 
@@ -166,7 +166,7 @@ namespace WinFormsAppTrazoRegistrosAdmin
                 }
             );
 
-            _RaiseRichTextInsertNewMessage?.Invoke(this, new (result.Item1, result.Item2));
+            _RaiseRichTextInsertNewMessage?.Invoke(this, new(result.Item1, result.Item2));
 
             if (result.Item1)
             {
@@ -184,7 +184,7 @@ namespace WinFormsAppTrazoRegistrosAdmin
         {
             if (string.IsNullOrEmpty(textBoxStatusAddDescription.Text))
             {
-                _RaiseRichTextInsertNewMessage?.Invoke(this, new (false, "Error campos invalidos."));
+                _RaiseRichTextInsertNewMessage?.Invoke(this, new(false, "Error campos invalidos."));
                 return;
             }
 
@@ -201,7 +201,7 @@ namespace WinFormsAppTrazoRegistrosAdmin
                 }
             );
 
-            _RaiseRichTextInsertNewMessage?.Invoke(this, new (true, result.Item2));
+            _RaiseRichTextInsertNewMessage?.Invoke(this, new(true, result.Item2));
 
             if (result.Item1)
             {

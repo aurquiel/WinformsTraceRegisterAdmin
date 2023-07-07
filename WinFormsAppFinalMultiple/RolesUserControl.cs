@@ -340,15 +340,15 @@ namespace WinFormsAppTrazoRegistrosAdmin
 
                 foreach (var item in comboBoxUserRoleEdit.Items)
                 {
-                    if(((UserRole)item).uro_id == userRoleSelected.uro_id)
+                    if (((UserRole)item).uro_id == userRoleSelected.uro_id)
                     {
-                        comboBoxUserRoleEdit.SelectedItem = item;   
+                        comboBoxUserRoleEdit.SelectedItem = item;
                     }
                 }
-                   
+
                 //comboBoxStatusEdit_SelectedIndexChanged(null, null);
 
-                    //El rol del usuaio activo actual se modifico el rol actualziar permisos
+                //El rol del usuaio activo actual se modifico el rol actualziar permisos
                 if (((UserRole)comboBoxUserRoleEdit.SelectedItem).uro_id == _activeUser.usr_urol_id)
                 {
                     var resultGetPermisison = await _webserviceOperations.UserPermitGetByRol(_activeUser.usr_urol_id);

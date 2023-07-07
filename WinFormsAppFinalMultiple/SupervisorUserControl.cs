@@ -24,8 +24,8 @@ namespace WinFormsAppTrazoRegistrosAdmin
             EventHandler<List<Supervisor>> RaiseUpdateSupervisor)
         {
             InitializeComponent();
-            _webserviceOperations= webserviceOperations;
-            _activeUser= activeUser;
+            _webserviceOperations = webserviceOperations;
+            _activeUser = activeUser;
             _supervisorList = supervisorList;
             _RaiseRichTextInsertNewMessage = RaiseRichTextInsertNewMessage;
             _RaiseUpdateSupervisor = RaiseUpdateSupervisor;
@@ -91,13 +91,13 @@ namespace WinFormsAppTrazoRegistrosAdmin
         {
             if (comboBoxSupervisorEdit.SelectedIndex == -1)
             {
-                _RaiseRichTextInsertNewMessage?.Invoke(this, new (false, "Error debe seleccionar un estatus."));
+                _RaiseRichTextInsertNewMessage?.Invoke(this, new(false, "Error debe seleccionar un estatus."));
                 return;
             }
 
             if (string.IsNullOrEmpty(textBoxSupervisorEditDescription.Text))
             {
-                _RaiseRichTextInsertNewMessage?.Invoke(this, new (false, "Error campos invalidos."));
+                _RaiseRichTextInsertNewMessage?.Invoke(this, new(false, "Error campos invalidos."));
                 return;
             }
 
@@ -165,7 +165,7 @@ namespace WinFormsAppTrazoRegistrosAdmin
                 }
             );
 
-            _RaiseRichTextInsertNewMessage?.Invoke(this, new (result.Item1, result.Item2));
+            _RaiseRichTextInsertNewMessage?.Invoke(this, new(result.Item1, result.Item2));
 
             if (result.Item1)
             {
@@ -182,7 +182,7 @@ namespace WinFormsAppTrazoRegistrosAdmin
         {
             if (string.IsNullOrEmpty(textBoxSupervisorAddDescription.Text))
             {
-                _RaiseRichTextInsertNewMessage?.Invoke(this, new (false, "Error campos invalidos."));
+                _RaiseRichTextInsertNewMessage?.Invoke(this, new(false, "Error campos invalidos."));
                 return;
             }
 
@@ -198,11 +198,11 @@ namespace WinFormsAppTrazoRegistrosAdmin
                 }
             );
 
-            _RaiseRichTextInsertNewMessage?.Invoke(this, new (result.Item1, result.Item2));
+            _RaiseRichTextInsertNewMessage?.Invoke(this, new(result.Item1, result.Item2));
 
             if (result.Item1)
             {
-                
+
                 await UpdateSupervisorList();
                 BindSupervisorEdit();
                 textBoxSupervisorAddDescription.Text = string.Empty;

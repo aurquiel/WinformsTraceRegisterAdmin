@@ -65,11 +65,12 @@
             dataGridViewTextBoxColumn7 = new DataGridViewTextBoxColumn();
             dgvEditSupervisorReportColumnProcesado = new DataGridViewComboBoxColumn();
             panel7 = new Panel();
+            flowLayoutPanel2 = new FlowLayoutPanel();
+            buttonSupervisorReportEdit = new Button();
+            buttonSupervisorReportDelete = new Button();
+            buttonSupervisorReportEditClean = new Button();
             buttonSupervisorReportEditExcel = new Button();
             button5 = new Button();
-            buttonSupervisorReportEditClean = new Button();
-            buttonSupervisorReportDelete = new Button();
-            buttonSupervisorReportEdit = new Button();
             panel5 = new Panel();
             panel6 = new Panel();
             buttonSupervisorReportEditConsult = new Button();
@@ -77,6 +78,28 @@
             label1 = new Label();
             comboBoxSupervisorReportEdit = new ComboBox();
             label4 = new Label();
+            tableLayoutPanel3 = new TableLayoutPanel();
+            labelSupervisorDifferencePesos = new Label();
+            label22 = new Label();
+            labelSupervisorDifferenceEuros = new Label();
+            label20 = new Label();
+            labelSupervisorDifferenceDolar = new Label();
+            label18 = new Label();
+            label17 = new Label();
+            labelSupervisorOutPesos = new Label();
+            labelSupervisorInPesos = new Label();
+            labelSupervisorOutEuros = new Label();
+            labelSupervisorInEuros = new Label();
+            labelSupervisorOutDolares = new Label();
+            labelSupervisorInDolares = new Label();
+            label10 = new Label();
+            label9 = new Label();
+            label8 = new Label();
+            label7 = new Label();
+            label6 = new Label();
+            label5 = new Label();
+            label3 = new Label();
+            label2 = new Label();
             groupBox1 = new GroupBox();
             panel1 = new Panel();
             panel3 = new Panel();
@@ -93,31 +116,10 @@
             dgvAddSupervisorReportColumnComentarios = new DataGridViewTextBoxColumn();
             dgvAddSupervisorReportColumnStatusReport = new DataGridViewComboBoxColumn();
             panel2 = new Panel();
-            buttonbuttonSupervisorReportAddClean = new Button();
+            flowLayoutPanel1 = new FlowLayoutPanel();
             buttonSupervisorReportAdd = new Button();
+            buttonbuttonSupervisorReportAddClean = new Button();
             panel9 = new Panel();
-            label2 = new Label();
-            label3 = new Label();
-            label5 = new Label();
-            label6 = new Label();
-            label7 = new Label();
-            label8 = new Label();
-            label9 = new Label();
-            label10 = new Label();
-            labelSupervisorInDolares = new Label();
-            labelSupervisorOutDolares = new Label();
-            labelSupervisorInEuros = new Label();
-            labelSupervisorOutEuros = new Label();
-            labelSupervisorInPesos = new Label();
-            labelSupervisorOutPesos = new Label();
-            label17 = new Label();
-            label18 = new Label();
-            labelSupervisorDifferenceDolar = new Label();
-            label20 = new Label();
-            labelSupervisorDifferenceEuros = new Label();
-            label22 = new Label();
-            labelSupervisorDifferencePesos = new Label();
-            tableLayoutPanel3 = new TableLayoutPanel();
             tableLayoutPanel1.SuspendLayout();
             groupBox2.SuspendLayout();
             tableLayoutPanel2.SuspendLayout();
@@ -125,15 +127,17 @@
             panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridViewSupervisorReportEdit).BeginInit();
             panel7.SuspendLayout();
+            flowLayoutPanel2.SuspendLayout();
             panel5.SuspendLayout();
             panel6.SuspendLayout();
+            tableLayoutPanel3.SuspendLayout();
             groupBox1.SuspendLayout();
             panel1.SuspendLayout();
             panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridViewSupervisorReportAdd).BeginInit();
             panel2.SuspendLayout();
+            flowLayoutPanel1.SuspendLayout();
             panel9.SuspendLayout();
-            tableLayoutPanel3.SuspendLayout();
             SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -197,7 +201,7 @@
             panel8.Dock = DockStyle.Fill;
             panel8.Location = new Point(0, 42);
             panel8.Name = "panel8";
-            panel8.Size = new Size(1088, 180);
+            panel8.Size = new Size(1088, 186);
             panel8.TabIndex = 3;
             // 
             // dataGridViewSupervisorReportEdit
@@ -232,7 +236,7 @@
             dataGridViewSupervisorReportEdit.Name = "dataGridViewSupervisorReportEdit";
             dataGridViewSupervisorReportEdit.RowTemplate.Height = 25;
             dataGridViewSupervisorReportEdit.ShowCellErrors = false;
-            dataGridViewSupervisorReportEdit.Size = new Size(1088, 180);
+            dataGridViewSupervisorReportEdit.Size = new Size(1088, 186);
             dataGridViewSupervisorReportEdit.TabIndex = 1;
             dataGridViewSupervisorReportEdit.ColumnHeaderMouseClick += dataGridViewSupervisorReportEdit_ColumnHeaderMouseClick;
             // 
@@ -351,16 +355,76 @@
             // 
             // panel7
             // 
+            panel7.Controls.Add(flowLayoutPanel2);
             panel7.Controls.Add(buttonSupervisorReportEditExcel);
             panel7.Controls.Add(button5);
-            panel7.Controls.Add(buttonSupervisorReportEditClean);
-            panel7.Controls.Add(buttonSupervisorReportDelete);
-            panel7.Controls.Add(buttonSupervisorReportEdit);
             panel7.Dock = DockStyle.Bottom;
-            panel7.Location = new Point(0, 222);
+            panel7.Location = new Point(0, 228);
             panel7.Name = "panel7";
-            panel7.Size = new Size(1088, 42);
+            panel7.Size = new Size(1088, 36);
             panel7.TabIndex = 2;
+            // 
+            // flowLayoutPanel2
+            // 
+            flowLayoutPanel2.Controls.Add(buttonSupervisorReportEdit);
+            flowLayoutPanel2.Controls.Add(buttonSupervisorReportDelete);
+            flowLayoutPanel2.Controls.Add(buttonSupervisorReportEditClean);
+            flowLayoutPanel2.Dock = DockStyle.Left;
+            flowLayoutPanel2.Location = new Point(0, 0);
+            flowLayoutPanel2.Name = "flowLayoutPanel2";
+            flowLayoutPanel2.Size = new Size(323, 36);
+            flowLayoutPanel2.TabIndex = 30;
+            // 
+            // buttonSupervisorReportEdit
+            // 
+            buttonSupervisorReportEdit.FlatAppearance.BorderColor = Color.Green;
+            buttonSupervisorReportEdit.FlatStyle = FlatStyle.Flat;
+            buttonSupervisorReportEdit.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            buttonSupervisorReportEdit.ForeColor = Color.FromArgb(255, 128, 0);
+            buttonSupervisorReportEdit.Image = Properties.Resources.edit;
+            buttonSupervisorReportEdit.ImageAlign = ContentAlignment.MiddleRight;
+            buttonSupervisorReportEdit.Location = new Point(3, 3);
+            buttonSupervisorReportEdit.Name = "buttonSupervisorReportEdit";
+            buttonSupervisorReportEdit.Size = new Size(100, 30);
+            buttonSupervisorReportEdit.TabIndex = 20;
+            buttonSupervisorReportEdit.Text = "Editar";
+            buttonSupervisorReportEdit.TextAlign = ContentAlignment.MiddleLeft;
+            buttonSupervisorReportEdit.UseVisualStyleBackColor = true;
+            buttonSupervisorReportEdit.Click += buttonSupervisorReportEdit_Click;
+            // 
+            // buttonSupervisorReportDelete
+            // 
+            buttonSupervisorReportDelete.FlatAppearance.BorderColor = Color.Green;
+            buttonSupervisorReportDelete.FlatStyle = FlatStyle.Flat;
+            buttonSupervisorReportDelete.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            buttonSupervisorReportDelete.ForeColor = Color.FromArgb(192, 0, 0);
+            buttonSupervisorReportDelete.Image = Properties.Resources.delete;
+            buttonSupervisorReportDelete.ImageAlign = ContentAlignment.MiddleRight;
+            buttonSupervisorReportDelete.Location = new Point(109, 3);
+            buttonSupervisorReportDelete.Name = "buttonSupervisorReportDelete";
+            buttonSupervisorReportDelete.Size = new Size(100, 30);
+            buttonSupervisorReportDelete.TabIndex = 21;
+            buttonSupervisorReportDelete.Text = "Eliminar";
+            buttonSupervisorReportDelete.TextAlign = ContentAlignment.MiddleLeft;
+            buttonSupervisorReportDelete.UseVisualStyleBackColor = true;
+            buttonSupervisorReportDelete.Click += buttonSupervisorReportDelete_Click;
+            // 
+            // buttonSupervisorReportEditClean
+            // 
+            buttonSupervisorReportEditClean.FlatAppearance.BorderColor = Color.Green;
+            buttonSupervisorReportEditClean.FlatStyle = FlatStyle.Flat;
+            buttonSupervisorReportEditClean.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            buttonSupervisorReportEditClean.ForeColor = Color.Blue;
+            buttonSupervisorReportEditClean.Image = Properties.Resources.clean;
+            buttonSupervisorReportEditClean.ImageAlign = ContentAlignment.MiddleRight;
+            buttonSupervisorReportEditClean.Location = new Point(215, 3);
+            buttonSupervisorReportEditClean.Name = "buttonSupervisorReportEditClean";
+            buttonSupervisorReportEditClean.Size = new Size(100, 30);
+            buttonSupervisorReportEditClean.TabIndex = 27;
+            buttonSupervisorReportEditClean.Text = "Limpiar";
+            buttonSupervisorReportEditClean.TextAlign = ContentAlignment.MiddleLeft;
+            buttonSupervisorReportEditClean.UseVisualStyleBackColor = true;
+            buttonSupervisorReportEditClean.Click += buttonSupervisorReportEditClean_Click;
             // 
             // buttonSupervisorReportEditExcel
             // 
@@ -371,7 +435,7 @@
             buttonSupervisorReportEditExcel.ForeColor = Color.Green;
             buttonSupervisorReportEditExcel.Image = Properties.Resources.excel;
             buttonSupervisorReportEditExcel.ImageAlign = ContentAlignment.MiddleRight;
-            buttonSupervisorReportEditExcel.Location = new Point(940, 6);
+            buttonSupervisorReportEditExcel.Location = new Point(941, 3);
             buttonSupervisorReportEditExcel.Name = "buttonSupervisorReportEditExcel";
             buttonSupervisorReportEditExcel.Size = new Size(144, 30);
             buttonSupervisorReportEditExcel.TabIndex = 29;
@@ -396,57 +460,6 @@
             button5.Text = "Exportar Excel";
             button5.TextAlign = ContentAlignment.MiddleLeft;
             button5.UseVisualStyleBackColor = true;
-            // 
-            // buttonSupervisorReportEditClean
-            // 
-            buttonSupervisorReportEditClean.FlatAppearance.BorderColor = Color.Green;
-            buttonSupervisorReportEditClean.FlatStyle = FlatStyle.Flat;
-            buttonSupervisorReportEditClean.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            buttonSupervisorReportEditClean.ForeColor = Color.Blue;
-            buttonSupervisorReportEditClean.Image = Properties.Resources.clean;
-            buttonSupervisorReportEditClean.ImageAlign = ContentAlignment.MiddleRight;
-            buttonSupervisorReportEditClean.Location = new Point(213, 6);
-            buttonSupervisorReportEditClean.Name = "buttonSupervisorReportEditClean";
-            buttonSupervisorReportEditClean.Size = new Size(100, 30);
-            buttonSupervisorReportEditClean.TabIndex = 27;
-            buttonSupervisorReportEditClean.Text = "Limpiar";
-            buttonSupervisorReportEditClean.TextAlign = ContentAlignment.MiddleLeft;
-            buttonSupervisorReportEditClean.UseVisualStyleBackColor = true;
-            buttonSupervisorReportEditClean.Click += buttonSupervisorReportEditClean_Click;
-            // 
-            // buttonSupervisorReportDelete
-            // 
-            buttonSupervisorReportDelete.FlatAppearance.BorderColor = Color.Green;
-            buttonSupervisorReportDelete.FlatStyle = FlatStyle.Flat;
-            buttonSupervisorReportDelete.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            buttonSupervisorReportDelete.ForeColor = Color.FromArgb(192, 0, 0);
-            buttonSupervisorReportDelete.Image = Properties.Resources.delete;
-            buttonSupervisorReportDelete.ImageAlign = ContentAlignment.MiddleRight;
-            buttonSupervisorReportDelete.Location = new Point(109, 6);
-            buttonSupervisorReportDelete.Name = "buttonSupervisorReportDelete";
-            buttonSupervisorReportDelete.Size = new Size(100, 30);
-            buttonSupervisorReportDelete.TabIndex = 21;
-            buttonSupervisorReportDelete.Text = "Eliminar";
-            buttonSupervisorReportDelete.TextAlign = ContentAlignment.MiddleLeft;
-            buttonSupervisorReportDelete.UseVisualStyleBackColor = true;
-            buttonSupervisorReportDelete.Click += buttonSupervisorReportDelete_Click;
-            // 
-            // buttonSupervisorReportEdit
-            // 
-            buttonSupervisorReportEdit.FlatAppearance.BorderColor = Color.Green;
-            buttonSupervisorReportEdit.FlatStyle = FlatStyle.Flat;
-            buttonSupervisorReportEdit.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            buttonSupervisorReportEdit.ForeColor = Color.FromArgb(255, 128, 0);
-            buttonSupervisorReportEdit.Image = Properties.Resources.edit;
-            buttonSupervisorReportEdit.ImageAlign = ContentAlignment.MiddleRight;
-            buttonSupervisorReportEdit.Location = new Point(3, 6);
-            buttonSupervisorReportEdit.Name = "buttonSupervisorReportEdit";
-            buttonSupervisorReportEdit.Size = new Size(100, 30);
-            buttonSupervisorReportEdit.TabIndex = 20;
-            buttonSupervisorReportEdit.Text = "Editar";
-            buttonSupervisorReportEdit.TextAlign = ContentAlignment.MiddleLeft;
-            buttonSupervisorReportEdit.UseVisualStyleBackColor = true;
-            buttonSupervisorReportEdit.Click += buttonSupervisorReportEdit_Click;
             // 
             // panel5
             // 
@@ -525,6 +538,300 @@
             label4.TabIndex = 22;
             label4.Text = "Supervisor:";
             // 
+            // tableLayoutPanel3
+            // 
+            tableLayoutPanel3.CellBorderStyle = TableLayoutPanelCellBorderStyle.Single;
+            tableLayoutPanel3.ColumnCount = 7;
+            tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 14.28571F));
+            tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 14.28571F));
+            tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 14.28571F));
+            tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 14.28571F));
+            tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 14.28571F));
+            tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 14.28571F));
+            tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 14.28571F));
+            tableLayoutPanel3.Controls.Add(labelSupervisorDifferencePesos, 6, 2);
+            tableLayoutPanel3.Controls.Add(label22, 5, 2);
+            tableLayoutPanel3.Controls.Add(labelSupervisorDifferenceEuros, 4, 2);
+            tableLayoutPanel3.Controls.Add(label20, 3, 2);
+            tableLayoutPanel3.Controls.Add(labelSupervisorDifferenceDolar, 2, 2);
+            tableLayoutPanel3.Controls.Add(label18, 1, 2);
+            tableLayoutPanel3.Controls.Add(label17, 0, 2);
+            tableLayoutPanel3.Controls.Add(labelSupervisorOutPesos, 6, 1);
+            tableLayoutPanel3.Controls.Add(labelSupervisorInPesos, 5, 1);
+            tableLayoutPanel3.Controls.Add(labelSupervisorOutEuros, 4, 1);
+            tableLayoutPanel3.Controls.Add(labelSupervisorInEuros, 3, 1);
+            tableLayoutPanel3.Controls.Add(labelSupervisorOutDolares, 2, 1);
+            tableLayoutPanel3.Controls.Add(labelSupervisorInDolares, 1, 1);
+            tableLayoutPanel3.Controls.Add(label10, 0, 1);
+            tableLayoutPanel3.Controls.Add(label9, 6, 0);
+            tableLayoutPanel3.Controls.Add(label8, 5, 0);
+            tableLayoutPanel3.Controls.Add(label7, 4, 0);
+            tableLayoutPanel3.Controls.Add(label6, 3, 0);
+            tableLayoutPanel3.Controls.Add(label5, 2, 0);
+            tableLayoutPanel3.Controls.Add(label3, 1, 0);
+            tableLayoutPanel3.Controls.Add(label2, 0, 0);
+            tableLayoutPanel3.Dock = DockStyle.Fill;
+            tableLayoutPanel3.Location = new Point(3, 273);
+            tableLayoutPanel3.Name = "tableLayoutPanel3";
+            tableLayoutPanel3.RowCount = 3;
+            tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Percent, 33.33333F));
+            tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Percent, 33.33333F));
+            tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Percent, 33.33333F));
+            tableLayoutPanel3.Size = new Size(1088, 94);
+            tableLayoutPanel3.TabIndex = 1;
+            // 
+            // labelSupervisorDifferencePesos
+            // 
+            labelSupervisorDifferencePesos.AutoSize = true;
+            labelSupervisorDifferencePesos.Dock = DockStyle.Fill;
+            labelSupervisorDifferencePesos.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            labelSupervisorDifferencePesos.Location = new Point(934, 63);
+            labelSupervisorDifferencePesos.Name = "labelSupervisorDifferencePesos";
+            labelSupervisorDifferencePesos.Size = new Size(150, 30);
+            labelSupervisorDifferencePesos.TabIndex = 21;
+            labelSupervisorDifferencePesos.Text = "0";
+            labelSupervisorDifferencePesos.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // label22
+            // 
+            label22.AutoSize = true;
+            label22.Dock = DockStyle.Fill;
+            label22.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label22.Location = new Point(779, 63);
+            label22.Name = "label22";
+            label22.Size = new Size(148, 30);
+            label22.TabIndex = 20;
+            label22.Text = "PESOS =";
+            label22.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // labelSupervisorDifferenceEuros
+            // 
+            labelSupervisorDifferenceEuros.AutoSize = true;
+            labelSupervisorDifferenceEuros.Dock = DockStyle.Fill;
+            labelSupervisorDifferenceEuros.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            labelSupervisorDifferenceEuros.Location = new Point(624, 63);
+            labelSupervisorDifferenceEuros.Name = "labelSupervisorDifferenceEuros";
+            labelSupervisorDifferenceEuros.Size = new Size(148, 30);
+            labelSupervisorDifferenceEuros.TabIndex = 19;
+            labelSupervisorDifferenceEuros.Text = "0";
+            labelSupervisorDifferenceEuros.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // label20
+            // 
+            label20.AutoSize = true;
+            label20.Dock = DockStyle.Fill;
+            label20.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label20.Location = new Point(469, 63);
+            label20.Name = "label20";
+            label20.Size = new Size(148, 30);
+            label20.TabIndex = 18;
+            label20.Text = "EUROS =";
+            label20.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // labelSupervisorDifferenceDolar
+            // 
+            labelSupervisorDifferenceDolar.AutoSize = true;
+            labelSupervisorDifferenceDolar.Dock = DockStyle.Fill;
+            labelSupervisorDifferenceDolar.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            labelSupervisorDifferenceDolar.Location = new Point(314, 63);
+            labelSupervisorDifferenceDolar.Name = "labelSupervisorDifferenceDolar";
+            labelSupervisorDifferenceDolar.Size = new Size(148, 30);
+            labelSupervisorDifferenceDolar.TabIndex = 17;
+            labelSupervisorDifferenceDolar.Text = "0";
+            labelSupervisorDifferenceDolar.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // label18
+            // 
+            label18.AutoSize = true;
+            label18.Dock = DockStyle.Fill;
+            label18.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label18.Location = new Point(159, 63);
+            label18.Name = "label18";
+            label18.Size = new Size(148, 30);
+            label18.TabIndex = 16;
+            label18.Text = "DOLARES =";
+            label18.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // label17
+            // 
+            label17.AutoSize = true;
+            label17.Dock = DockStyle.Fill;
+            label17.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label17.Location = new Point(4, 63);
+            label17.Name = "label17";
+            label17.Size = new Size(148, 30);
+            label17.TabIndex = 15;
+            label17.Text = "Diferencias";
+            label17.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // labelSupervisorOutPesos
+            // 
+            labelSupervisorOutPesos.AutoSize = true;
+            labelSupervisorOutPesos.Dock = DockStyle.Fill;
+            labelSupervisorOutPesos.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            labelSupervisorOutPesos.Location = new Point(934, 32);
+            labelSupervisorOutPesos.Name = "labelSupervisorOutPesos";
+            labelSupervisorOutPesos.Size = new Size(150, 30);
+            labelSupervisorOutPesos.TabIndex = 14;
+            labelSupervisorOutPesos.Text = "0";
+            labelSupervisorOutPesos.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // labelSupervisorInPesos
+            // 
+            labelSupervisorInPesos.AutoSize = true;
+            labelSupervisorInPesos.Dock = DockStyle.Fill;
+            labelSupervisorInPesos.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            labelSupervisorInPesos.Location = new Point(779, 32);
+            labelSupervisorInPesos.Name = "labelSupervisorInPesos";
+            labelSupervisorInPesos.Size = new Size(148, 30);
+            labelSupervisorInPesos.TabIndex = 13;
+            labelSupervisorInPesos.Text = "0";
+            labelSupervisorInPesos.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // labelSupervisorOutEuros
+            // 
+            labelSupervisorOutEuros.AutoSize = true;
+            labelSupervisorOutEuros.Dock = DockStyle.Fill;
+            labelSupervisorOutEuros.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            labelSupervisorOutEuros.Location = new Point(624, 32);
+            labelSupervisorOutEuros.Name = "labelSupervisorOutEuros";
+            labelSupervisorOutEuros.Size = new Size(148, 30);
+            labelSupervisorOutEuros.TabIndex = 12;
+            labelSupervisorOutEuros.Text = "0";
+            labelSupervisorOutEuros.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // labelSupervisorInEuros
+            // 
+            labelSupervisorInEuros.AutoSize = true;
+            labelSupervisorInEuros.Dock = DockStyle.Fill;
+            labelSupervisorInEuros.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            labelSupervisorInEuros.Location = new Point(469, 32);
+            labelSupervisorInEuros.Name = "labelSupervisorInEuros";
+            labelSupervisorInEuros.Size = new Size(148, 30);
+            labelSupervisorInEuros.TabIndex = 11;
+            labelSupervisorInEuros.Text = "0";
+            labelSupervisorInEuros.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // labelSupervisorOutDolares
+            // 
+            labelSupervisorOutDolares.AutoSize = true;
+            labelSupervisorOutDolares.Dock = DockStyle.Fill;
+            labelSupervisorOutDolares.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            labelSupervisorOutDolares.Location = new Point(314, 32);
+            labelSupervisorOutDolares.Name = "labelSupervisorOutDolares";
+            labelSupervisorOutDolares.Size = new Size(148, 30);
+            labelSupervisorOutDolares.TabIndex = 10;
+            labelSupervisorOutDolares.Text = "0";
+            labelSupervisorOutDolares.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // labelSupervisorInDolares
+            // 
+            labelSupervisorInDolares.AutoSize = true;
+            labelSupervisorInDolares.Dock = DockStyle.Fill;
+            labelSupervisorInDolares.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            labelSupervisorInDolares.Location = new Point(159, 32);
+            labelSupervisorInDolares.Name = "labelSupervisorInDolares";
+            labelSupervisorInDolares.Size = new Size(148, 30);
+            labelSupervisorInDolares.TabIndex = 9;
+            labelSupervisorInDolares.Text = "0";
+            labelSupervisorInDolares.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Dock = DockStyle.Fill;
+            label10.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label10.Location = new Point(4, 32);
+            label10.Name = "label10";
+            label10.Size = new Size(148, 30);
+            label10.TabIndex = 8;
+            label10.Text = "Totales";
+            label10.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Dock = DockStyle.Fill;
+            label9.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label9.Location = new Point(934, 1);
+            label9.Name = "label9";
+            label9.Size = new Size(150, 30);
+            label9.TabIndex = 7;
+            label9.Text = "Salida Pesos";
+            label9.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Dock = DockStyle.Fill;
+            label8.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label8.Location = new Point(779, 1);
+            label8.Name = "label8";
+            label8.Size = new Size(148, 30);
+            label8.TabIndex = 6;
+            label8.Text = "Entrada Pesos";
+            label8.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Dock = DockStyle.Fill;
+            label7.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label7.Location = new Point(624, 1);
+            label7.Name = "label7";
+            label7.Size = new Size(148, 30);
+            label7.TabIndex = 5;
+            label7.Text = "Salida Euros";
+            label7.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Dock = DockStyle.Fill;
+            label6.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label6.Location = new Point(469, 1);
+            label6.Name = "label6";
+            label6.Size = new Size(148, 30);
+            label6.TabIndex = 4;
+            label6.Text = "Entrada Euros";
+            label6.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Dock = DockStyle.Fill;
+            label5.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label5.Location = new Point(314, 1);
+            label5.Name = "label5";
+            label5.Size = new Size(148, 30);
+            label5.TabIndex = 3;
+            label5.Text = "Salida Dolares";
+            label5.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Dock = DockStyle.Fill;
+            label3.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label3.Location = new Point(159, 1);
+            label3.Name = "label3";
+            label3.Size = new Size(148, 30);
+            label3.TabIndex = 2;
+            label3.Text = "Entrada Dolares";
+            label3.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Dock = DockStyle.Fill;
+            label2.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.Location = new Point(4, 1);
+            label2.Name = "label2";
+            label2.Size = new Size(148, 30);
+            label2.TabIndex = 1;
+            label2.Text = "Total Mes";
+            label2.TextAlign = ContentAlignment.MiddleCenter;
+            // 
             // groupBox1
             // 
             groupBox1.BackColor = Color.White;
@@ -554,7 +861,7 @@
             panel3.Dock = DockStyle.Fill;
             panel3.Location = new Point(0, 0);
             panel3.Name = "panel3";
-            panel3.Size = new Size(1094, 94);
+            panel3.Size = new Size(1094, 100);
             panel3.TabIndex = 1;
             // 
             // dataGridViewSupervisorReportAdd
@@ -587,7 +894,7 @@
             dataGridViewSupervisorReportAdd.Name = "dataGridViewSupervisorReportAdd";
             dataGridViewSupervisorReportAdd.RowTemplate.Height = 25;
             dataGridViewSupervisorReportAdd.ShowCellErrors = false;
-            dataGridViewSupervisorReportAdd.Size = new Size(1094, 94);
+            dataGridViewSupervisorReportAdd.Size = new Size(1094, 100);
             dataGridViewSupervisorReportAdd.TabIndex = 0;
             dataGridViewSupervisorReportAdd.CellValueChanged += dataGridViewSupervisorReportAdd_CellValueChanged;
             dataGridViewSupervisorReportAdd.CurrentCellDirtyStateChanged += dataGridViewSupervisorReportAdd_CurrentCellDirtyStateChanged;
@@ -692,30 +999,22 @@
             // 
             // panel2
             // 
-            panel2.Controls.Add(buttonbuttonSupervisorReportAddClean);
-            panel2.Controls.Add(buttonSupervisorReportAdd);
+            panel2.Controls.Add(flowLayoutPanel1);
             panel2.Dock = DockStyle.Bottom;
-            panel2.Location = new Point(0, 94);
+            panel2.Location = new Point(0, 100);
             panel2.Name = "panel2";
-            panel2.Size = new Size(1094, 42);
+            panel2.Size = new Size(1094, 36);
             panel2.TabIndex = 0;
             // 
-            // buttonbuttonSupervisorReportAddClean
+            // flowLayoutPanel1
             // 
-            buttonbuttonSupervisorReportAddClean.FlatAppearance.BorderColor = Color.Green;
-            buttonbuttonSupervisorReportAddClean.FlatStyle = FlatStyle.Flat;
-            buttonbuttonSupervisorReportAddClean.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            buttonbuttonSupervisorReportAddClean.ForeColor = Color.Blue;
-            buttonbuttonSupervisorReportAddClean.Image = Properties.Resources.clean;
-            buttonbuttonSupervisorReportAddClean.ImageAlign = ContentAlignment.MiddleRight;
-            buttonbuttonSupervisorReportAddClean.Location = new Point(109, 6);
-            buttonbuttonSupervisorReportAddClean.Name = "buttonbuttonSupervisorReportAddClean";
-            buttonbuttonSupervisorReportAddClean.Size = new Size(100, 30);
-            buttonbuttonSupervisorReportAddClean.TabIndex = 20;
-            buttonbuttonSupervisorReportAddClean.Text = "Limpiar";
-            buttonbuttonSupervisorReportAddClean.TextAlign = ContentAlignment.MiddleLeft;
-            buttonbuttonSupervisorReportAddClean.UseVisualStyleBackColor = true;
-            buttonbuttonSupervisorReportAddClean.Click += buttonbuttonSupervisorReportAddClean_Click;
+            flowLayoutPanel1.Controls.Add(buttonSupervisorReportAdd);
+            flowLayoutPanel1.Controls.Add(buttonbuttonSupervisorReportAddClean);
+            flowLayoutPanel1.Dock = DockStyle.Left;
+            flowLayoutPanel1.Location = new Point(0, 0);
+            flowLayoutPanel1.Name = "flowLayoutPanel1";
+            flowLayoutPanel1.Size = new Size(217, 36);
+            flowLayoutPanel1.TabIndex = 21;
             // 
             // buttonSupervisorReportAdd
             // 
@@ -725,7 +1024,7 @@
             buttonSupervisorReportAdd.ForeColor = Color.Green;
             buttonSupervisorReportAdd.Image = Properties.Resources.add;
             buttonSupervisorReportAdd.ImageAlign = ContentAlignment.MiddleRight;
-            buttonSupervisorReportAdd.Location = new Point(3, 6);
+            buttonSupervisorReportAdd.Location = new Point(3, 3);
             buttonSupervisorReportAdd.Name = "buttonSupervisorReportAdd";
             buttonSupervisorReportAdd.Size = new Size(100, 30);
             buttonSupervisorReportAdd.TabIndex = 19;
@@ -733,6 +1032,23 @@
             buttonSupervisorReportAdd.TextAlign = ContentAlignment.MiddleLeft;
             buttonSupervisorReportAdd.UseVisualStyleBackColor = true;
             buttonSupervisorReportAdd.Click += buttonbuttonSupervisorReportAdd_Click;
+            // 
+            // buttonbuttonSupervisorReportAddClean
+            // 
+            buttonbuttonSupervisorReportAddClean.FlatAppearance.BorderColor = Color.Green;
+            buttonbuttonSupervisorReportAddClean.FlatStyle = FlatStyle.Flat;
+            buttonbuttonSupervisorReportAddClean.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            buttonbuttonSupervisorReportAddClean.ForeColor = Color.Blue;
+            buttonbuttonSupervisorReportAddClean.Image = Properties.Resources.clean;
+            buttonbuttonSupervisorReportAddClean.ImageAlign = ContentAlignment.MiddleRight;
+            buttonbuttonSupervisorReportAddClean.Location = new Point(109, 3);
+            buttonbuttonSupervisorReportAddClean.Name = "buttonbuttonSupervisorReportAddClean";
+            buttonbuttonSupervisorReportAddClean.Size = new Size(100, 30);
+            buttonbuttonSupervisorReportAddClean.TabIndex = 20;
+            buttonbuttonSupervisorReportAddClean.Text = "Limpiar";
+            buttonbuttonSupervisorReportAddClean.TextAlign = ContentAlignment.MiddleLeft;
+            buttonbuttonSupervisorReportAddClean.UseVisualStyleBackColor = true;
+            buttonbuttonSupervisorReportAddClean.Click += buttonbuttonSupervisorReportAddClean_Click;
             // 
             // panel9
             // 
@@ -744,300 +1060,6 @@
             panel9.Padding = new Padding(10);
             panel9.Size = new Size(1126, 594);
             panel9.TabIndex = 2;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Dock = DockStyle.Fill;
-            label2.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.Location = new Point(4, 1);
-            label2.Name = "label2";
-            label2.Size = new Size(148, 30);
-            label2.TabIndex = 1;
-            label2.Text = "Total Mes";
-            label2.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Dock = DockStyle.Fill;
-            label3.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.Location = new Point(159, 1);
-            label3.Name = "label3";
-            label3.Size = new Size(148, 30);
-            label3.TabIndex = 2;
-            label3.Text = "Entrada Dolares";
-            label3.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Dock = DockStyle.Fill;
-            label5.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label5.Location = new Point(314, 1);
-            label5.Name = "label5";
-            label5.Size = new Size(148, 30);
-            label5.TabIndex = 3;
-            label5.Text = "Salida Dolares";
-            label5.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Dock = DockStyle.Fill;
-            label6.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label6.Location = new Point(469, 1);
-            label6.Name = "label6";
-            label6.Size = new Size(148, 30);
-            label6.TabIndex = 4;
-            label6.Text = "Entrada Euros";
-            label6.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Dock = DockStyle.Fill;
-            label7.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label7.Location = new Point(624, 1);
-            label7.Name = "label7";
-            label7.Size = new Size(148, 30);
-            label7.TabIndex = 5;
-            label7.Text = "Salida Euros";
-            label7.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Dock = DockStyle.Fill;
-            label8.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label8.Location = new Point(779, 1);
-            label8.Name = "label8";
-            label8.Size = new Size(148, 30);
-            label8.TabIndex = 6;
-            label8.Text = "Entrada Pesos";
-            label8.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // label9
-            // 
-            label9.AutoSize = true;
-            label9.Dock = DockStyle.Fill;
-            label9.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label9.Location = new Point(934, 1);
-            label9.Name = "label9";
-            label9.Size = new Size(150, 30);
-            label9.TabIndex = 7;
-            label9.Text = "Salida Pesos";
-            label9.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // label10
-            // 
-            label10.AutoSize = true;
-            label10.Dock = DockStyle.Fill;
-            label10.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label10.Location = new Point(4, 32);
-            label10.Name = "label10";
-            label10.Size = new Size(148, 30);
-            label10.TabIndex = 8;
-            label10.Text = "Totales";
-            label10.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // labelSupervisorInDolares
-            // 
-            labelSupervisorInDolares.AutoSize = true;
-            labelSupervisorInDolares.Dock = DockStyle.Fill;
-            labelSupervisorInDolares.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            labelSupervisorInDolares.Location = new Point(159, 32);
-            labelSupervisorInDolares.Name = "labelSupervisorInDolares";
-            labelSupervisorInDolares.Size = new Size(148, 30);
-            labelSupervisorInDolares.TabIndex = 9;
-            labelSupervisorInDolares.Text = "0";
-            labelSupervisorInDolares.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // labelSupervisorOutDolares
-            // 
-            labelSupervisorOutDolares.AutoSize = true;
-            labelSupervisorOutDolares.Dock = DockStyle.Fill;
-            labelSupervisorOutDolares.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            labelSupervisorOutDolares.Location = new Point(314, 32);
-            labelSupervisorOutDolares.Name = "labelSupervisorOutDolares";
-            labelSupervisorOutDolares.Size = new Size(148, 30);
-            labelSupervisorOutDolares.TabIndex = 10;
-            labelSupervisorOutDolares.Text = "0";
-            labelSupervisorOutDolares.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // labelSupervisorInEuros
-            // 
-            labelSupervisorInEuros.AutoSize = true;
-            labelSupervisorInEuros.Dock = DockStyle.Fill;
-            labelSupervisorInEuros.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            labelSupervisorInEuros.Location = new Point(469, 32);
-            labelSupervisorInEuros.Name = "labelSupervisorInEuros";
-            labelSupervisorInEuros.Size = new Size(148, 30);
-            labelSupervisorInEuros.TabIndex = 11;
-            labelSupervisorInEuros.Text = "0";
-            labelSupervisorInEuros.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // labelSupervisorOutEuros
-            // 
-            labelSupervisorOutEuros.AutoSize = true;
-            labelSupervisorOutEuros.Dock = DockStyle.Fill;
-            labelSupervisorOutEuros.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            labelSupervisorOutEuros.Location = new Point(624, 32);
-            labelSupervisorOutEuros.Name = "labelSupervisorOutEuros";
-            labelSupervisorOutEuros.Size = new Size(148, 30);
-            labelSupervisorOutEuros.TabIndex = 12;
-            labelSupervisorOutEuros.Text = "0";
-            labelSupervisorOutEuros.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // labelSupervisorInPesos
-            // 
-            labelSupervisorInPesos.AutoSize = true;
-            labelSupervisorInPesos.Dock = DockStyle.Fill;
-            labelSupervisorInPesos.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            labelSupervisorInPesos.Location = new Point(779, 32);
-            labelSupervisorInPesos.Name = "labelSupervisorInPesos";
-            labelSupervisorInPesos.Size = new Size(148, 30);
-            labelSupervisorInPesos.TabIndex = 13;
-            labelSupervisorInPesos.Text = "0";
-            labelSupervisorInPesos.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // labelSupervisorOutPesos
-            // 
-            labelSupervisorOutPesos.AutoSize = true;
-            labelSupervisorOutPesos.Dock = DockStyle.Fill;
-            labelSupervisorOutPesos.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            labelSupervisorOutPesos.Location = new Point(934, 32);
-            labelSupervisorOutPesos.Name = "labelSupervisorOutPesos";
-            labelSupervisorOutPesos.Size = new Size(150, 30);
-            labelSupervisorOutPesos.TabIndex = 14;
-            labelSupervisorOutPesos.Text = "0";
-            labelSupervisorOutPesos.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // label17
-            // 
-            label17.AutoSize = true;
-            label17.Dock = DockStyle.Fill;
-            label17.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label17.Location = new Point(4, 63);
-            label17.Name = "label17";
-            label17.Size = new Size(148, 30);
-            label17.TabIndex = 15;
-            label17.Text = "Diferencias";
-            label17.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // label18
-            // 
-            label18.AutoSize = true;
-            label18.Dock = DockStyle.Fill;
-            label18.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label18.Location = new Point(159, 63);
-            label18.Name = "label18";
-            label18.Size = new Size(148, 30);
-            label18.TabIndex = 16;
-            label18.Text = "DOLARES =";
-            label18.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // labelSupervisorDifferenceDolar
-            // 
-            labelSupervisorDifferenceDolar.AutoSize = true;
-            labelSupervisorDifferenceDolar.Dock = DockStyle.Fill;
-            labelSupervisorDifferenceDolar.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            labelSupervisorDifferenceDolar.Location = new Point(314, 63);
-            labelSupervisorDifferenceDolar.Name = "labelSupervisorDifferenceDolar";
-            labelSupervisorDifferenceDolar.Size = new Size(148, 30);
-            labelSupervisorDifferenceDolar.TabIndex = 17;
-            labelSupervisorDifferenceDolar.Text = "0";
-            labelSupervisorDifferenceDolar.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // label20
-            // 
-            label20.AutoSize = true;
-            label20.Dock = DockStyle.Fill;
-            label20.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label20.Location = new Point(469, 63);
-            label20.Name = "label20";
-            label20.Size = new Size(148, 30);
-            label20.TabIndex = 18;
-            label20.Text = "EUROS =";
-            label20.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // labelSupervisorDifferenceEuros
-            // 
-            labelSupervisorDifferenceEuros.AutoSize = true;
-            labelSupervisorDifferenceEuros.Dock = DockStyle.Fill;
-            labelSupervisorDifferenceEuros.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            labelSupervisorDifferenceEuros.Location = new Point(624, 63);
-            labelSupervisorDifferenceEuros.Name = "labelSupervisorDifferenceEuros";
-            labelSupervisorDifferenceEuros.Size = new Size(148, 30);
-            labelSupervisorDifferenceEuros.TabIndex = 19;
-            labelSupervisorDifferenceEuros.Text = "0";
-            labelSupervisorDifferenceEuros.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // label22
-            // 
-            label22.AutoSize = true;
-            label22.Dock = DockStyle.Fill;
-            label22.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label22.Location = new Point(779, 63);
-            label22.Name = "label22";
-            label22.Size = new Size(148, 30);
-            label22.TabIndex = 20;
-            label22.Text = "PESOS =";
-            label22.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // labelSupervisorDifferencePesos
-            // 
-            labelSupervisorDifferencePesos.AutoSize = true;
-            labelSupervisorDifferencePesos.Dock = DockStyle.Fill;
-            labelSupervisorDifferencePesos.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            labelSupervisorDifferencePesos.Location = new Point(934, 63);
-            labelSupervisorDifferencePesos.Name = "labelSupervisorDifferencePesos";
-            labelSupervisorDifferencePesos.Size = new Size(150, 30);
-            labelSupervisorDifferencePesos.TabIndex = 21;
-            labelSupervisorDifferencePesos.Text = "0";
-            labelSupervisorDifferencePesos.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // tableLayoutPanel3
-            // 
-            tableLayoutPanel3.CellBorderStyle = TableLayoutPanelCellBorderStyle.Single;
-            tableLayoutPanel3.ColumnCount = 7;
-            tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 14.28571F));
-            tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 14.28571F));
-            tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 14.28571F));
-            tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 14.28571F));
-            tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 14.28571F));
-            tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 14.28571F));
-            tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 14.28571F));
-            tableLayoutPanel3.Controls.Add(labelSupervisorDifferencePesos, 6, 2);
-            tableLayoutPanel3.Controls.Add(label22, 5, 2);
-            tableLayoutPanel3.Controls.Add(labelSupervisorDifferenceEuros, 4, 2);
-            tableLayoutPanel3.Controls.Add(label20, 3, 2);
-            tableLayoutPanel3.Controls.Add(labelSupervisorDifferenceDolar, 2, 2);
-            tableLayoutPanel3.Controls.Add(label18, 1, 2);
-            tableLayoutPanel3.Controls.Add(label17, 0, 2);
-            tableLayoutPanel3.Controls.Add(labelSupervisorOutPesos, 6, 1);
-            tableLayoutPanel3.Controls.Add(labelSupervisorInPesos, 5, 1);
-            tableLayoutPanel3.Controls.Add(labelSupervisorOutEuros, 4, 1);
-            tableLayoutPanel3.Controls.Add(labelSupervisorInEuros, 3, 1);
-            tableLayoutPanel3.Controls.Add(labelSupervisorOutDolares, 2, 1);
-            tableLayoutPanel3.Controls.Add(labelSupervisorInDolares, 1, 1);
-            tableLayoutPanel3.Controls.Add(label10, 0, 1);
-            tableLayoutPanel3.Controls.Add(label9, 6, 0);
-            tableLayoutPanel3.Controls.Add(label8, 5, 0);
-            tableLayoutPanel3.Controls.Add(label7, 4, 0);
-            tableLayoutPanel3.Controls.Add(label6, 3, 0);
-            tableLayoutPanel3.Controls.Add(label5, 2, 0);
-            tableLayoutPanel3.Controls.Add(label3, 1, 0);
-            tableLayoutPanel3.Controls.Add(label2, 0, 0);
-            tableLayoutPanel3.Dock = DockStyle.Fill;
-            tableLayoutPanel3.Location = new Point(3, 273);
-            tableLayoutPanel3.Name = "tableLayoutPanel3";
-            tableLayoutPanel3.RowCount = 3;
-            tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Percent, 33.33333F));
-            tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Percent, 33.33333F));
-            tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Percent, 33.33333F));
-            tableLayoutPanel3.Size = new Size(1088, 94);
-            tableLayoutPanel3.TabIndex = 1;
             // 
             // RegisterSupervisorUserControl
             // 
@@ -1053,17 +1075,19 @@
             panel8.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dataGridViewSupervisorReportEdit).EndInit();
             panel7.ResumeLayout(false);
+            flowLayoutPanel2.ResumeLayout(false);
             panel5.ResumeLayout(false);
             panel6.ResumeLayout(false);
             panel6.PerformLayout();
+            tableLayoutPanel3.ResumeLayout(false);
+            tableLayoutPanel3.PerformLayout();
             groupBox1.ResumeLayout(false);
             panel1.ResumeLayout(false);
             panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dataGridViewSupervisorReportAdd).EndInit();
             panel2.ResumeLayout(false);
+            flowLayoutPanel1.ResumeLayout(false);
             panel9.ResumeLayout(false);
-            tableLayoutPanel3.ResumeLayout(false);
-            tableLayoutPanel3.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -1142,5 +1166,7 @@
         private Label label5;
         private Label label3;
         private Label label2;
+        private FlowLayoutPanel flowLayoutPanel2;
+        private FlowLayoutPanel flowLayoutPanel1;
     }
 }

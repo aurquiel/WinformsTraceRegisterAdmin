@@ -52,6 +52,7 @@
             textBoxUserRolesNameAdd = new TextBox();
             label1 = new Label();
             panel2 = new Panel();
+            flowLayoutPanel1 = new FlowLayoutPanel();
             panel1.SuspendLayout();
             tableLayoutPanel1.SuspendLayout();
             groupBox2.SuspendLayout();
@@ -68,6 +69,7 @@
             panel9.SuspendLayout();
             panel10.SuspendLayout();
             panel2.SuspendLayout();
+            flowLayoutPanel1.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
@@ -118,7 +120,7 @@
             buttonUserRoleRefreshData.ForeColor = Color.Blue;
             buttonUserRoleRefreshData.Image = Properties.Resources.refresh;
             buttonUserRoleRefreshData.ImageAlign = ContentAlignment.MiddleRight;
-            buttonUserRoleRefreshData.Location = new Point(19, 39);
+            buttonUserRoleRefreshData.Location = new Point(6, 39);
             buttonUserRoleRefreshData.Name = "buttonUserRoleRefreshData";
             buttonUserRoleRefreshData.Size = new Size(100, 30);
             buttonUserRoleRefreshData.TabIndex = 18;
@@ -157,7 +159,7 @@
             panel6.Dock = DockStyle.Fill;
             panel6.Location = new Point(0, 37);
             panel6.Name = "panel6";
-            panel6.Size = new Size(1164, 188);
+            panel6.Size = new Size(1164, 194);
             panel6.TabIndex = 2;
             // 
             // dataGridViewUserRoleEdit
@@ -167,17 +169,16 @@
             dataGridViewUserRoleEdit.Location = new Point(0, 0);
             dataGridViewUserRoleEdit.Name = "dataGridViewUserRoleEdit";
             dataGridViewUserRoleEdit.RowTemplate.Height = 25;
-            dataGridViewUserRoleEdit.Size = new Size(1164, 188);
+            dataGridViewUserRoleEdit.Size = new Size(1164, 194);
             dataGridViewUserRoleEdit.TabIndex = 0;
             // 
             // panel5
             // 
-            panel5.Controls.Add(buttonUserRoleEdit);
-            panel5.Controls.Add(buttonUserRoleDelete);
+            panel5.Controls.Add(flowLayoutPanel1);
             panel5.Dock = DockStyle.Bottom;
-            panel5.Location = new Point(0, 225);
+            panel5.Location = new Point(0, 231);
             panel5.Name = "panel5";
-            panel5.Size = new Size(1164, 44);
+            panel5.Size = new Size(1164, 38);
             panel5.TabIndex = 1;
             // 
             // buttonUserRoleEdit
@@ -188,7 +189,7 @@
             buttonUserRoleEdit.ForeColor = Color.FromArgb(255, 128, 0);
             buttonUserRoleEdit.Image = Properties.Resources.edit;
             buttonUserRoleEdit.ImageAlign = ContentAlignment.MiddleRight;
-            buttonUserRoleEdit.Location = new Point(16, 6);
+            buttonUserRoleEdit.Location = new Point(3, 3);
             buttonUserRoleEdit.Name = "buttonUserRoleEdit";
             buttonUserRoleEdit.Size = new Size(100, 30);
             buttonUserRoleEdit.TabIndex = 18;
@@ -205,7 +206,7 @@
             buttonUserRoleDelete.ForeColor = Color.FromArgb(192, 0, 0);
             buttonUserRoleDelete.Image = Properties.Resources.delete;
             buttonUserRoleDelete.ImageAlign = ContentAlignment.MiddleRight;
-            buttonUserRoleDelete.Location = new Point(122, 6);
+            buttonUserRoleDelete.Location = new Point(109, 3);
             buttonUserRoleDelete.Name = "buttonUserRoleDelete";
             buttonUserRoleDelete.Size = new Size(100, 30);
             buttonUserRoleDelete.TabIndex = 19;
@@ -274,7 +275,7 @@
             panel8.Dock = DockStyle.Fill;
             panel8.Location = new Point(0, 37);
             panel8.Name = "panel8";
-            panel8.Size = new Size(1164, 188);
+            panel8.Size = new Size(1164, 194);
             panel8.TabIndex = 2;
             // 
             // dataGridViewUserRoleAdd
@@ -284,7 +285,7 @@
             dataGridViewUserRoleAdd.Location = new Point(0, 0);
             dataGridViewUserRoleAdd.Name = "dataGridViewUserRoleAdd";
             dataGridViewUserRoleAdd.RowTemplate.Height = 25;
-            dataGridViewUserRoleAdd.Size = new Size(1164, 188);
+            dataGridViewUserRoleAdd.Size = new Size(1164, 194);
             dataGridViewUserRoleAdd.TabIndex = 0;
             // 
             // panel9
@@ -292,9 +293,9 @@
             panel9.BackColor = Color.White;
             panel9.Controls.Add(buttonUserRoleAdd);
             panel9.Dock = DockStyle.Bottom;
-            panel9.Location = new Point(0, 225);
+            panel9.Location = new Point(0, 231);
             panel9.Name = "panel9";
-            panel9.Size = new Size(1164, 44);
+            panel9.Size = new Size(1164, 38);
             panel9.TabIndex = 1;
             // 
             // buttonUserRoleAdd
@@ -305,7 +306,7 @@
             buttonUserRoleAdd.ForeColor = Color.Green;
             buttonUserRoleAdd.Image = Properties.Resources.add;
             buttonUserRoleAdd.ImageAlign = ContentAlignment.MiddleRight;
-            buttonUserRoleAdd.Location = new Point(19, 6);
+            buttonUserRoleAdd.Location = new Point(3, 3);
             buttonUserRoleAdd.Name = "buttonUserRoleAdd";
             buttonUserRoleAdd.Size = new Size(100, 30);
             buttonUserRoleAdd.TabIndex = 20;
@@ -353,6 +354,16 @@
             panel2.Size = new Size(1196, 727);
             panel2.TabIndex = 2;
             // 
+            // flowLayoutPanel1
+            // 
+            flowLayoutPanel1.Controls.Add(buttonUserRoleEdit);
+            flowLayoutPanel1.Controls.Add(buttonUserRoleDelete);
+            flowLayoutPanel1.Dock = DockStyle.Left;
+            flowLayoutPanel1.Location = new Point(0, 0);
+            flowLayoutPanel1.Name = "flowLayoutPanel1";
+            flowLayoutPanel1.Size = new Size(214, 38);
+            flowLayoutPanel1.TabIndex = 22;
+            // 
             // RolesUserControl
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -378,6 +389,7 @@
             panel10.ResumeLayout(false);
             panel10.PerformLayout();
             panel2.ResumeLayout(false);
+            flowLayoutPanel1.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -407,5 +419,6 @@
         private Panel panel10;
         private TextBox textBoxUserRolesNameAdd;
         private Label label1;
+        private FlowLayoutPanel flowLayoutPanel1;
     }
 }

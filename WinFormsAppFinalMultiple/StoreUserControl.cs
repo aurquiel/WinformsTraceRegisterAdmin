@@ -30,7 +30,7 @@ namespace WinFormsAppTrazoRegistrosAdmin
             _activeUser = activeUser;
             _storeList = storeList;
             _supervisorList = supervisorList;
-            _RaiseRichTextInsertNewMessage  = RaiseRichTextInsertNewMessage;
+            _RaiseRichTextInsertNewMessage = RaiseRichTextInsertNewMessage;
             _RaiseUpdateStore = RaiseUpdateStore;
 
             ApplyPermissions(_activePermissionSection);
@@ -122,13 +122,13 @@ namespace WinFormsAppTrazoRegistrosAdmin
         {
             if (comboBoxStoreEdit.SelectedIndex == -1)
             {
-                _RaiseRichTextInsertNewMessage?.Invoke(this, new (false, "Error debe seleccionar una tienda."));
+                _RaiseRichTextInsertNewMessage?.Invoke(this, new(false, "Error debe seleccionar una tienda."));
                 return;
             }
 
             if (string.IsNullOrEmpty(textBoxStoreEditCode.Text) || comboBoxStoreEditSupervisor.SelectedIndex == -1)
             {
-                _RaiseRichTextInsertNewMessage?.Invoke(this, new (false, "Error campos invalidos."));
+                _RaiseRichTextInsertNewMessage?.Invoke(this, new(false, "Error campos invalidos."));
                 return;
             }
 
@@ -149,7 +149,7 @@ namespace WinFormsAppTrazoRegistrosAdmin
                 }
             );
 
-            _RaiseRichTextInsertNewMessage?.Invoke(this, new (result.Item1, result.Item2));
+            _RaiseRichTextInsertNewMessage?.Invoke(this, new(result.Item1, result.Item2));
 
             if (result.Item1)
             {
@@ -187,7 +187,7 @@ namespace WinFormsAppTrazoRegistrosAdmin
         {
             if (comboBoxStoreEdit.SelectedIndex == -1)
             {
-                _RaiseRichTextInsertNewMessage?.Invoke(this, new (false, "Error debe seleccionar una tienda."));
+                _RaiseRichTextInsertNewMessage?.Invoke(this, new(false, "Error debe seleccionar una tienda."));
                 return;
             }
 
@@ -206,7 +206,7 @@ namespace WinFormsAppTrazoRegistrosAdmin
                 }
             );
 
-            _RaiseRichTextInsertNewMessage?.Invoke(this, new (result.Item1, result.Item2));
+            _RaiseRichTextInsertNewMessage?.Invoke(this, new(result.Item1, result.Item2));
 
             if (result.Item1)
             {
@@ -227,7 +227,7 @@ namespace WinFormsAppTrazoRegistrosAdmin
         {
             if (string.IsNullOrEmpty(textBoxStoreAddCode.Text) || comboBoxStoreAddSupervisor.SelectedIndex == -1)
             {
-                _RaiseRichTextInsertNewMessage?.Invoke(this, new (false, "Error campos invalidos."));
+                _RaiseRichTextInsertNewMessage?.Invoke(this, new(false, "Error campos invalidos."));
                 return;
             }
 
@@ -246,7 +246,7 @@ namespace WinFormsAppTrazoRegistrosAdmin
                 }
             );
 
-            _RaiseRichTextInsertNewMessage?.Invoke(this, new (result.Item1, result.Item2));
+            _RaiseRichTextInsertNewMessage?.Invoke(this, new(result.Item1, result.Item2));
 
             if (result.Item1)
             {
