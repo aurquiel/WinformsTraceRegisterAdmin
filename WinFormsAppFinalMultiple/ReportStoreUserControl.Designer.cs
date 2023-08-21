@@ -89,6 +89,8 @@
             buttonExportToExcel = new Button();
             panel5 = new Panel();
             panel6 = new Panel();
+            comboBoxSupervisor = new ComboBox();
+            label23 = new Label();
             textBoxResta = new TextBox();
             label12 = new Label();
             textBoxDolar = new TextBox();
@@ -116,8 +118,6 @@
             buttonStoreReportConsult = new Button();
             dateTimePickerInit = new DateTimePicker();
             label1 = new Label();
-            label23 = new Label();
-            comboBoxSupervisor = new ComboBox();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             panel3.SuspendLayout();
@@ -752,20 +752,39 @@
             panel6.Size = new Size(1201, 262);
             panel6.TabIndex = 1;
             // 
+            // comboBoxSupervisor
+            // 
+            comboBoxSupervisor.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBoxSupervisor.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            comboBoxSupervisor.FormattingEnabled = true;
+            comboBoxSupervisor.Location = new Point(684, 207);
+            comboBoxSupervisor.Name = "comboBoxSupervisor";
+            comboBoxSupervisor.Size = new Size(217, 25);
+            comboBoxSupervisor.TabIndex = 53;
+            // 
+            // label23
+            // 
+            label23.AutoSize = true;
+            label23.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label23.Location = new Point(597, 210);
+            label23.Name = "label23";
+            label23.Size = new Size(79, 17);
+            label23.TabIndex = 52;
+            label23.Text = "Supervisor:";
+            // 
             // textBoxResta
             // 
-            textBoxResta.Location = new Point(689, 133);
+            textBoxResta.Location = new Point(684, 138);
             textBoxResta.Name = "textBoxResta";
             textBoxResta.Size = new Size(147, 23);
             textBoxResta.TabIndex = 51;
-            textBoxResta.Text = "0";
             textBoxResta.KeyPress += decimal_KeyPress;
             // 
             // label12
             // 
             label12.AutoSize = true;
             label12.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label12.Location = new Point(602, 135);
+            label12.Location = new Point(597, 140);
             label12.Name = "label12";
             label12.Size = new Size(74, 17);
             label12.TabIndex = 50;
@@ -773,18 +792,17 @@
             // 
             // textBoxDolar
             // 
-            textBoxDolar.Location = new Point(689, 72);
+            textBoxDolar.Location = new Point(684, 77);
             textBoxDolar.Name = "textBoxDolar";
             textBoxDolar.Size = new Size(147, 23);
             textBoxDolar.TabIndex = 49;
-            textBoxDolar.Text = "0";
             textBoxDolar.KeyPress += decimal_KeyPress;
             // 
             // label9
             // 
             label9.AutoSize = true;
             label9.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label9.Location = new Point(602, 74);
+            label9.Location = new Point(597, 79);
             label9.Name = "label9";
             label9.Size = new Size(75, 17);
             label9.TabIndex = 48;
@@ -792,18 +810,17 @@
             // 
             // textBoxZelle
             // 
-            textBoxZelle.Location = new Point(689, 39);
+            textBoxZelle.Location = new Point(684, 44);
             textBoxZelle.Name = "textBoxZelle";
             textBoxZelle.Size = new Size(147, 23);
             textBoxZelle.TabIndex = 47;
-            textBoxZelle.Text = "0";
             textBoxZelle.KeyPress += decimal_KeyPress;
             // 
             // label10
             // 
             label10.AutoSize = true;
             label10.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label10.Location = new Point(602, 42);
+            label10.Location = new Point(597, 47);
             label10.Name = "label10";
             label10.Size = new Size(60, 17);
             label10.TabIndex = 46;
@@ -811,18 +828,17 @@
             // 
             // textBoxEuros
             // 
-            textBoxEuros.Location = new Point(689, 10);
+            textBoxEuros.Location = new Point(684, 15);
             textBoxEuros.Name = "textBoxEuros";
             textBoxEuros.Size = new Size(147, 23);
             textBoxEuros.TabIndex = 45;
-            textBoxEuros.Text = "0";
             textBoxEuros.KeyPress += decimal_KeyPress;
             // 
             // label11
             // 
             label11.AutoSize = true;
             label11.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label11.Location = new Point(602, 13);
+            label11.Location = new Point(597, 18);
             label11.Name = "label11";
             label11.Size = new Size(64, 17);
             label11.TabIndex = 44;
@@ -834,7 +850,6 @@
             textBoxEquivalente.Name = "textBoxEquivalente";
             textBoxEquivalente.Size = new Size(147, 23);
             textBoxEquivalente.TabIndex = 43;
-            textBoxEquivalente.Text = "0";
             textBoxEquivalente.KeyPress += decimal_KeyPress;
             // 
             // label7
@@ -853,7 +868,6 @@
             textBoxCambio.Name = "textBoxCambio";
             textBoxCambio.Size = new Size(147, 23);
             textBoxCambio.TabIndex = 41;
-            textBoxCambio.Text = "0";
             textBoxCambio.KeyPress += decimal_KeyPress;
             // 
             // label6
@@ -872,7 +886,6 @@
             textBoxTotalFacturado.Name = "textBoxTotalFacturado";
             textBoxTotalFacturado.Size = new Size(147, 23);
             textBoxTotalFacturado.TabIndex = 39;
-            textBoxTotalFacturado.Text = "0";
             textBoxTotalFacturado.KeyPress += decimal_KeyPress;
             // 
             // label5
@@ -921,9 +934,9 @@
             comboBoxStatus.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxStatus.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             comboBoxStatus.FormattingEnabled = true;
-            comboBoxStatus.Location = new Point(689, 163);
+            comboBoxStatus.Location = new Point(684, 168);
             comboBoxStatus.Name = "comboBoxStatus";
-            comboBoxStatus.Size = new Size(211, 25);
+            comboBoxStatus.Size = new Size(217, 25);
             comboBoxStatus.TabIndex = 34;
             // 
             // buttonStoreReportClean
@@ -947,7 +960,7 @@
             // 
             label8.AutoSize = true;
             label8.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label8.Location = new Point(602, 166);
+            label8.Location = new Point(597, 171);
             label8.Name = "label8";
             label8.Size = new Size(56, 17);
             label8.TabIndex = 33;
@@ -955,18 +968,17 @@
             // 
             // textBoxGastos
             // 
-            textBoxGastos.Location = new Point(689, 103);
+            textBoxGastos.Location = new Point(684, 108);
             textBoxGastos.Name = "textBoxGastos";
             textBoxGastos.Size = new Size(147, 23);
             textBoxGastos.TabIndex = 31;
-            textBoxGastos.Text = "0";
             textBoxGastos.KeyPress += decimal_KeyPress;
             // 
             // label3
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.Location = new Point(602, 106);
+            label3.Location = new Point(597, 111);
             label3.Name = "label3";
             label3.Size = new Size(71, 17);
             label3.TabIndex = 29;
@@ -1026,26 +1038,6 @@
             label1.Size = new Size(85, 17);
             label1.TabIndex = 24;
             label1.Text = "Fecha Inicio:";
-            // 
-            // label23
-            // 
-            label23.AutoSize = true;
-            label23.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label23.Location = new Point(602, 205);
-            label23.Name = "label23";
-            label23.Size = new Size(79, 17);
-            label23.TabIndex = 52;
-            label23.Text = "Supervisor:";
-            // 
-            // comboBoxSupervisor
-            // 
-            comboBoxSupervisor.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBoxSupervisor.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            comboBoxSupervisor.FormattingEnabled = true;
-            comboBoxSupervisor.Location = new Point(689, 202);
-            comboBoxSupervisor.Name = "comboBoxSupervisor";
-            comboBoxSupervisor.Size = new Size(211, 25);
-            comboBoxSupervisor.TabIndex = 53;
             // 
             // ReportStoreUserControl
             // 

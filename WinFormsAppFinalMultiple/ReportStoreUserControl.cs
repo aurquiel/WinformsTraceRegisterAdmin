@@ -178,14 +178,14 @@ namespace WinFormsAppTrazoRegistrosAdmin
                 p_storep_sto_id = GetIdsOfStoresSelected(),
                 p_storep_date_ini = dateTimePickerInit.Value,
                 p_storep_date_end = dateTimePickerFinal.Value,
-                p_storep_total_bs = Decimal.Parse(textBoxTotalFacturado.Text),
-                p_storep_change_bs = Decimal.Parse(textBoxCambio.Text),
-                p_storep_equivalent_dollar = Decimal.Parse(textBoxEquivalente.Text),
-                p_storep_payed_euro = Decimal.Parse(textBoxEuros.Text),
-                p_storep_payed_zelle = Decimal.Parse(textBoxZelle.Text),
-                p_storep_payed_dollar = Decimal.Parse(textBoxDolar.Text),
-                p_storep_expended_dollar = Decimal.Parse(textBoxGastos.Text),
-                p_storep_total_dollar = Decimal.Parse(textBoxResta.Text),
+                p_storep_total_bs = string.IsNullOrWhiteSpace(textBoxTotalFacturado.Text) ? null : Decimal.Parse(textBoxTotalFacturado.Text),
+                p_storep_change_bs = string.IsNullOrWhiteSpace(textBoxCambio.Text) ? null: Decimal.Parse(textBoxCambio.Text),
+                p_storep_equivalent_dollar = string.IsNullOrWhiteSpace(textBoxEquivalente.Text) ? null : Decimal.Parse(textBoxEquivalente.Text),
+                p_storep_payed_euro = string.IsNullOrWhiteSpace(textBoxEuros.Text) ? null : Decimal.Parse(textBoxEuros.Text),
+                p_storep_payed_zelle = string.IsNullOrWhiteSpace(textBoxZelle.Text) ? null : Decimal.Parse(textBoxZelle.Text),
+                p_storep_payed_dollar = string.IsNullOrWhiteSpace(textBoxDolar.Text) ? null : Decimal.Parse(textBoxDolar.Text),
+                p_storep_expended_dollar = string.IsNullOrWhiteSpace(textBoxGastos.Text) ? null : Decimal.Parse(textBoxGastos.Text),
+                p_storep_total_dollar = string.IsNullOrWhiteSpace(textBoxResta.Text) ? null : Decimal.Parse(textBoxResta.Text),
                 p_storep_sta_id = ((Status)comboBoxStatus.SelectedItem).sta_id,
                 p_storep_sup_id = ((Supervisor)comboBoxSupervisor.SelectedItem).sup_id
             });
@@ -263,70 +263,6 @@ namespace WinFormsAppTrazoRegistrosAdmin
             if (dateTimePickerFinal.Value.Date < dateTimePickerInit.Value.Date)
             {
                 _RaiseRichTextInsertNewMessage(this, new(false, "Error Fecha de Final menor a Fecha Inicio."));
-                return false;
-            }
-
-            decimal totalFacturado = 0;
-
-            if (Decimal.TryParse(textBoxTotalFacturado.Text, out totalFacturado) == false)
-            {
-                _RaiseRichTextInsertNewMessage(this, new(false, "Error Total Facturado Bs formato invalido."));
-                return false;
-            }
-
-            decimal cambio = 0;
-
-            if (Decimal.TryParse(textBoxTotalFacturado.Text, out cambio) == false)
-            {
-                _RaiseRichTextInsertNewMessage(this, new(false, "Error Cambio Bs formato invalido."));
-                return false;
-            }
-
-            decimal equivalente = 0;
-
-            if (Decimal.TryParse(textBoxTotalFacturado.Text, out equivalente) == false)
-            {
-                _RaiseRichTextInsertNewMessage(this, new(false, "Error Equivalente $ formato invalido."));
-                return false;
-            }
-
-            decimal euros = 0;
-
-            if (Decimal.TryParse(textBoxTotalFacturado.Text, out euros) == false)
-            {
-                _RaiseRichTextInsertNewMessage(this, new(false, "Error Euros formato invalido."));
-                return false;
-            }
-
-            decimal zelle = 0;
-
-            if (Decimal.TryParse(textBoxTotalFacturado.Text, out zelle) == false)
-            {
-                _RaiseRichTextInsertNewMessage(this, new(false, "Error Zelle formato invalido."));
-                return false;
-            }
-
-            decimal dolar = 0;
-
-            if (Decimal.TryParse(textBoxTotalFacturado.Text, out dolar) == false)
-            {
-                _RaiseRichTextInsertNewMessage(this, new(false, "Error Dolar $ formato invalido."));
-                return false;
-            }
-
-            decimal gastos = 0;
-
-            if (Decimal.TryParse(textBoxTotalFacturado.Text, out gastos) == false)
-            {
-                _RaiseRichTextInsertNewMessage(this, new(false, "Error Gastos formato invalido."));
-                return false;
-            }
-
-            decimal resta = 0;
-
-            if (Decimal.TryParse(textBoxTotalFacturado.Text, out resta) == false)
-            {
-                _RaiseRichTextInsertNewMessage(this, new(false, "Error Resta $ formato invalido."));
                 return false;
             }
 
