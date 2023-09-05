@@ -628,7 +628,7 @@ namespace WinFormsAppTrazoRegistrosAdmin
                 storep_expended_dollar = 0,
                 storep_total_dollar = sumMonth,
                 storep_sta_id = (int)MagickInfo.STATUS.CIERRE_DE_MES,
-                storep_sup_id = _supervisorList.Where(s => s.sup_description == aux[0].storep_supervisor).Select(g => g.sup_id).FirstOrDefault(),
+                storep_sup_id = _supervisorList.Where(s => s.sup_id == _storeList.Where(x => x.sto_id == ((Store)comboBoxStoreReportEdit.SelectedItem).sto_id).Select(x => x.sto_sup_id).FirstOrDefault()).Select(g => g.sup_id).FirstOrDefault(),
                 storep_comments = "Viene de " + auxTime.Date.AddMonths(-1).ToString("MMMM-yyyy"),
                 storep_starep_id = (int)MagickInfo.STATUS_REPORT.PROCESADO,
                 storep_audit_id = _activeUser.usr_id,

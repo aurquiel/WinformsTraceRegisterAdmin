@@ -21,7 +21,7 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_ED2C48639FA74C14AB33A3FD3408A713"
+        "MsmKey" = "8:_BDA45390883441A8B121A46002042607"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -122,9 +122,9 @@
         }
         "File"
         {
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_ED2C48639FA74C14AB33A3FD3408A713"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_BDA45390883441A8B121A46002042607"
             {
-            "SourcePath" = "8:..\\Images\\operations.ico"
+            "SourcePath" = "8:..\\data\\operations.ico"
             "TargetName" = "8:operations.ico"
             "Tag" = "8:"
             "Folder" = "8:_4FF56053A158486E94E92EF27BF6F9DB"
@@ -330,7 +330,7 @@
             "Target" = "8:_9B5C1CDB0FB6413096DE4560473C3067"
             "Folder" = "8:_CBD6964668E24D5CB2052D6E46B11B02"
             "WorkingFolder" = "8:_4FF56053A158486E94E92EF27BF6F9DB"
-            "Icon" = "8:_ED2C48639FA74C14AB33A3FD3408A713"
+            "Icon" = "8:_BDA45390883441A8B121A46002042607"
             "Feature" = "8:"
             }
         }
