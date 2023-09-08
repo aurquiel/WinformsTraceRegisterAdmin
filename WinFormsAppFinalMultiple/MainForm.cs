@@ -201,7 +201,7 @@ namespace WinFormsAppTrazoRegistrosAdmin
         {
             _userList = e;
 
-            listOfUserControls[(int)MagickInfo.USER_CONTROL_LIST_INDEX.STORE_REGISTER] =
+            listOfUserControls[(int)MagickInfo.USER_CONTROL_LIST_INDEX.USERS] =
                 new UserUserControl(_webserviceOperations, _activeUser, _userList,
                 _userRoleList, _storeList, _supervisorList, _activePermit[(int)MagickInfo.PERMISOS_INDEX.USUARIO],
                 _activePermit, RaiseRichTextInsertNewMessage, RaiseUpdateUser, RaiseUpdateActiveUser);
